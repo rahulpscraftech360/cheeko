@@ -140,7 +140,7 @@ export const FAQSection = (): JSX.Element => {
             </div>
           </div>
 
-          <Button className="flex gap-2.5 px-7 py-1 self-stretch w-full bg-[#ff7f11] items-center justify-center rounded-[40px]">
+          <Button className="flex gap-2.5 px-7 py-1 self-stretch w-full bg-[#FF6B01] items-center justify-center rounded-[40px]">
             <span className="font-semibold text-xl text-center leading-7 [font-family:'Baloo_2',Helvetica] text-white">
               Save Credentials
             </span>
@@ -197,7 +197,7 @@ export const FAQSection = (): JSX.Element => {
             </div>
           </div>
 
-          <Button   onClick={() => navigate("/payment")}  className="flex gap-2.5 px-7 py-1 self-stretch w-full bg-[#ff7f11] items-center justify-center rounded-[40px]">
+          <Button   onClick={() => navigate("/payment")}  className="flex gap-2.5 px-7 py-1 self-stretch w-full bg-[#FF6B01] items-center justify-center rounded-[40px]">
             <span className="flex-1 [font-family:'Baloo_2',Helvetica] font-semibold text-white text-xl text-center leading-7">
               Proceed
             </span>

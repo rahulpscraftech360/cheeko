@@ -33,7 +33,7 @@ export const HeroBannerSection = (): JSX.Element => {
     let animationId: number;
     let lastTime = 0;
     const FALL_SPEED = 700; // Reduced from 500 (40% of original speed)
-    const FINAL_POSITION = 100;
+    const FINAL_POSITION = 150;
     const BOUNCE_HEIGHT = 100;
     const BOUNCE_DAMPING = 0.6; // Reduced damping for longer bounce decay
     
@@ -134,7 +134,7 @@ export const HeroBannerSection = (): JSX.Element => {
     <section className="relative w-full h-[800px] bg-[#f7fbfe]  overflow-hidden shadow-[0px_8px_20px_#0000001a]">
       <div className="relative w-full h-full">
         {/* Adjusted width with proper media query syntax */}
-        <div className="absolute w-[600px] md:w-[1069px] h-[800px] top-0 left-0 bg-[#ff7f11] overflow-hidden  rounded-[0px_60px_60px_0px]" style={leftSectionStyle}>
+        <div className="absolute w-[600px] md:w-[1069px] h-[800px] top-0 left-0 bg-[#FF6B01] overflow-hidden  rounded-[0px_60px_60px_0px]" style={leftSectionStyle}>
           <div className="relative w-[510px] md:w-[987px] h-[824px] top-[156px] -left-[26px] md:-left-40">
             <div className="absolute w-[230px] md:w-[356px] h-[248px] md:h-[383px] top-[372px] left-[51px] md:left-[79px] overflow-hidden rotate-[36.63deg]">
               <div className="relative w-[422px] md:w-[651px] h-[422px] md:h-[651px] top-[-14px] md:top-[-22px] left-[-96px] md:left-[-148px]">
@@ -188,15 +188,25 @@ export const HeroBannerSection = (): JSX.Element => {
           </div>
         </div>
 
-        {teddyVisible && (
-          <img
-            className="absolute w-[447px] md:w-[690px] h-[447px] md:h-[690px] left-[397px] md:left-[585px] object-cover"
-            style={teddyStyle}
-            alt="AI Teddy Bear"
-            src="/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png"
-          />
-        )}
+     
 
+{teddyVisible && (
+          <div className="absolute w-full flex  left-[497px] md:left-[685px]" style={{ 
+            zIndex: 10,
+            pointerEvents: 'none'
+          }}>
+            <img
+              className="object-contain max-w-[447px] md:max-w-[690px] max-h-[60vh] w-auto h-auto"
+              style={{
+                ...teddyStyle,
+                position: 'relative',
+                left: 'auto'
+              }}
+              alt="AI Teddy Bear"
+              src="/T-rex.png"
+            />
+          </div>
+        )}
         <div className="absolute w-[148px] md:w-[229px] h-[143px] md:h-[220px] top-[616px] left-[86%] rotate-180" style={rightSectionStyle}>
           <div className="relative h-[169px] md:h-[260px]">
             <img
@@ -219,7 +229,7 @@ export const HeroBannerSection = (): JSX.Element => {
               className="flex flex-col items-start gap-1.5 md:gap-2.5 px-[8px] md:px-[13px] py-[17px] md:py-[26px] relative self-stretch w-full flex-[0_0_auto] bg-white rounded-lg md:rounded-xl overflow-hidden shadow-[1px_1px_20px_#0000001a]"
             >
               <CardContent className="flex flex-col items-center gap-0.5 md:gap-1 relative self-stretch w-full flex-[0_0_auto] p-0">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-bold text-[#ff7f11] text-[21px] md:text-[32px] text-center tracking-[0] leading-5 md:leading-7">
+                <div className="relative self-stretch mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-bold text-[#FF6B01] text-[21px] md:text-[32px] text-center tracking-[0] leading-5 md:leading-7">
                   {/* Display the actual stat value with animation opacity */}
                   <span style={{ opacity: animatedStats[index] }}>
                     {stat.value}

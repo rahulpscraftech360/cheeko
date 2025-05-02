@@ -11,7 +11,7 @@ export const ReviewsSection = (): JSX.Element => {
     name: "AI - Teddy Bear",
     price: "$99.9",
     reviews: "(2.5 K) Reviews",
-    image: "/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png",
+    image: "/device.png",
     quantity: 1,
   };
 
@@ -29,7 +29,7 @@ export const ReviewsSection = (): JSX.Element => {
         <CardContent className="p-6">
           <div className="flex flex-col md:flex-row items-start gap-5">
             <div className="flex flex-wrap items-start gap-[6px_6px] flex-1">
-            <div className="w-5 h-5 rounded bg-[#FF7F11] flex items-center justify-center">
+            <div className="w-5 h-5 rounded bg-[#FF6B01] flex items-center justify-center">
                     <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 4L4.5 7.5L11 1" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
@@ -67,7 +67,7 @@ export const ReviewsSection = (): JSX.Element => {
                     </div>
 
                     <div className="flex flex-col items-end gap-1 mt-2 md:mt-0">
-                      <div className="text-[#ff7f11] text-[32px] text-right leading-8 [font-family:'Baloo_2',Helvetica] font-bold">
+                      <div className="text-[#FF6B01] text-[32px] text-right leading-8 [font-family:'Baloo_2',Helvetica] font-bold">
                         {product.price}
                       </div>
 
@@ -168,7 +168,7 @@ export const ReviewsSection = (): JSX.Element => {
               onClick={() => {
                 window.location.href = "https://rzp.io/rzp/efhdlbt";
               }}
-              className="w-full py-1 bg-[#ff7f11] hover:bg-[#ff7f11]/90 rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-white text-xl text-center leading-7"
+              className="w-full py-1 bg-[#FF6B01] hover:bg-[#FF6B01]/90 rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-white text-xl text-center leading-7"
             >
               Proceed
             </Button>

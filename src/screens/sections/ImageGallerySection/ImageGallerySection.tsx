@@ -7,7 +7,7 @@ export const ImageGallerySection = (): JSX.Element => {
   const navigate = useNavigate();
   const location = useLocation();
   const isProductRoute = location.pathname === "/product";
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   const handleVideoClick = () => {
     setIsPlaying(true);
@@ -15,16 +15,16 @@ export const ImageGallerySection = (): JSX.Element => {
 
   return (
     <section className="flex flex-col w-full items-center gap-[60px] py-16">
-      <Card className="w-full max-w-[1312px] h-[640px] bg-[#ff7f11] rounded-[40px] overflow-hidden border-none">
+      <Card className="w-full max-w-[1312px]  bg-[#FF6B01] rounded-[40px] overflow-hidden border-none">
         <CardContent className="p-0 h-full flex items-center justify-center">
           {!isPlaying ? (
             <div 
-              className="relative w-[637px] h-[637px]  bg-cover bg-center cursor-pointer"
+              className="relative w-full h-auto  bg-cover bg-center cursor-pointer"
               onClick={handleVideoClick}
             >
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140px] h-[140px] flex items-center justify-center">
                 <img
-                  className="w-full h-full"
+                  className="w-full h-auto"
                   alt="PlayIcon button"
                   src="/solar-play-bold.svg"
                 />
@@ -35,26 +35,26 @@ export const ImageGallerySection = (): JSX.Element => {
               className="w-full h-full object-contain"
               loop
               autoPlay
-              src="/video/Animation01.mp4"
+              src="/video/Explode_Animation02.mp4"
             >
-              Your browser does not support the video tag.
+          
             </video>
           )}
         </CardContent>
       </Card>
 
       <div className="flex items-center justify-between w-full max-w-[1312px] gap-8">
-        <Card className="flex w-1/2 h-[609px] bg-[#ff7f11] rounded-[40px] overflow-hidden border-none">
+        <Card className="flex w-1/2 h-[609px] bg-[#FF6B01] rounded-[40px] overflow-hidden border-none">
           <CardContent className="p-[9px] flex items-center justify-center w-full">
             <img
               className="w-full h-full object-cover"
               alt="AI Teddy"
-              src="/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png"
+              src="/device.png"
             />
           </CardContent>
         </Card>
 
-        <Card className="flex w-1/2 bg-[#ff7f11] rounded-[40px] overflow-hidden border-none">
+        <Card className="flex w-1/2 bg-[#FF6B01] rounded-[40px] overflow-hidden border-none">
           <CardContent className="flex flex-col items-start gap-[101px] p-8 py-[76px] w-full">
             <div className="flex flex-col items-center gap-5 w-full">
               <h2 className="self-stretch mt-[-1.00px] font-['Baloo_2',Helvetica] font-bold text-white text-[88px] leading-[80px]">

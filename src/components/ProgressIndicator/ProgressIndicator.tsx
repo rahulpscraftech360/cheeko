@@ -50,14 +50,14 @@ export const ProgressIndicator = ({ currentStep }: ProgressIndicatorProps): JSX.
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center z-10">
               <div className={`w-12 h-12 rounded-full ${
-                step.isActive ? 'bg-[#FF7F11]' : 'bg-gray-200'
+                step.isActive ? 'bg-[#FF6B01]' : 'bg-gray-200'
               } flex items-center justify-center transition-colors duration-300`}>
                 {React.cloneElement(step.icon, { 
                   className: `w-6 h-6 ${step.isActive ? 'text-white' : 'text-gray-500'}`
                 })}
               </div>
               <span className={`text-xs mt-1 font-medium ${
-                step.isActive ? 'text-[#FF7F11]' : 'text-gray-500'
+                step.isActive ? 'text-[#FF6B01]' : 'text-gray-500'
               } transition-colors duration-300`}>
                 {step.label}
               </span>
@@ -66,7 +66,7 @@ export const ProgressIndicator = ({ currentStep }: ProgressIndicatorProps): JSX.
 
           {/* Progress Line */}
           <div className="absolute top-6 left-0 right-0 h-[2px] bg-gray-200">
-            <div className={`h-full bg-[#FF7F11] transition-all duration-300 ${getProgressWidth()}`} />
+            <div className={`h-full bg-[#FF6B01] transition-all duration-300 ${getProgressWidth()}`} />
           </div>
         </div>
       </div>

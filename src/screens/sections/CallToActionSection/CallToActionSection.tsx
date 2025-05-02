@@ -34,7 +34,7 @@ export const CallToActionSection = (): JSX.Element => {
 
       <div className="flex items-center gap-[29px] w-full">
         {/* Promotional Card */}
-        <Card className="flex-1 h-[520px] bg-[#ff7f11] rounded-[20px] overflow-hidden border-none">
+        <Card className="flex-1 h-[520px] bg-[#FF6B01] rounded-[20px] overflow-hidden border-none">
           <CardContent className="p-0 h-full">
             <div className="relative w-full h-full p-6">
               <img
@@ -97,7 +97,7 @@ export const CallToActionSection = (): JSX.Element => {
               <Separator className="w-full" />
             </div>
 
-            <Button className="w-full mt-6 bg-[#ff7f11] hover:bg-[#e67200] rounded-[40px] h-auto py-2.5 px-7">
+            <Button className="w-full mt-6 bg-[#FF6B01] hover:bg-[#e67200] rounded-[40px] h-auto py-2.5 px-7">
               <span className="[font-family:'Baloo_2',Helvetica] font-semibold text-white text-2xl text-center leading-7">
                 Buy Now
               </span>
@@ -135,7 +135,7 @@ export const CallToActionSection = (): JSX.Element => {
               <Separator className="w-full" />
             </div>
 
-            <Button className="w-full mt-6 bg-[#ff7f11] hover:bg-[#e67200] rounded-[40px] h-auto py-2.5 px-7">
+            <Button className="w-full mt-6 bg-[#FF6B01] hover:bg-[#e67200] rounded-[40px] h-auto py-2.5 px-7">
               <span className="[font-family:'Baloo_2',Helvetica] font-semibold text-white text-2xl text-center leading-7">
                 Buy Now
               </span>

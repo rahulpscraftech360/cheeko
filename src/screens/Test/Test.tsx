@@ -48,7 +48,7 @@ export const Test = (): JSX.Element => {
 
   return (
     <>
-      <section className="relative w-full bg-[#ff7f11] overflow-hidden py-12 px-4">
+      <section className="relative w-full bg-[#FF6B01] overflow-hidden py-12 px-4">
         <div className="container relative mx-auto max-w-[375px] md:max-w-none">
           {/* Decorative circles */}
           <div className="absolute w-full h-full top-0 left-0 pointer-events-none">

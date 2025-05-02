@@ -10,22 +10,22 @@ export const VideoSection = (): JSX.Element => {
   const thumbnails = [
     {
       id: 1,
-      src: "/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png",
+      src: "/device.png",
       alt: "Element",
     },
     {
       id: 2,
-      src: "/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png",
+      src: "/device.png",
       alt: "Element",
     },
     {
       id: 3,
-      src: "/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png",
+      src: "/device.png",
       alt: "Element",
     },
     {
       id: 4,
-      src: "/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png",
+      src: "/device.png",
       alt: "Element",
     },
   ];
@@ -59,11 +59,11 @@ export const VideoSection = (): JSX.Element => {
       {/* Left side - Product images */}
       <div className="flex flex-col w-full md:w-1/2 items-center gap-7">
         <Card className="w-full bg-[#d9d9d94c] rounded-[20px] overflow-hidden border-none">
-        <CardContent className="p-[30px] sm:p-[53px] py-0.5 h-[380px] sm:h-[540px] flex items-center">
+        <CardContent className="w-[100%] h-[100%]">
             <img
-              className="w-full h-full object-contain"
+              className="w-[100%] h-auto object-contain"
               alt="Element"
-              src="/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png"
+              src="/device.png"
             />
           </CardContent>
         </Card> 
@@ -72,9 +72,9 @@ export const VideoSection = (): JSX.Element => {
           {thumbnails.map((thumbnail) => (
                       <Card
               key={thumbnail.id}
-              className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] bg-[#d9d9d933] rounded-[15px] md:rounded-[20px] overflow-hidden border-none"
+              className="w-[80px] h-[67px] md:w-[120px] md:h-[120px] bg-[#d9d9d933] rounded-[15px] md:rounded-[20px] overflow-hidden border-none"
             >
-              <CardContent className="p-[5px] md:p-[7px] h-full flex items-center">
+              <CardContent className=" h-full flex items-center">
                 <img
                   className="w-full h-full object-cover"
                   alt={thumbnail.alt}
@@ -111,7 +111,7 @@ export const VideoSection = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="text-[#ff7f11] text-[64px] leading-[56px] [font-family:'Baloo_2',Helvetica] font-bold tracking-[0]">
+          <div className="text-[#FF6B01] text-[64px] leading-[56px] [font-family:'Baloo_2',Helvetica] font-bold tracking-[0]">
             $99.9
           </div>
         </div>
@@ -181,7 +181,7 @@ export const VideoSection = (): JSX.Element => {
                   Remove
                 </Button>
               </div>
-        <Button className="w-full bg-[#ff7f11] hover:bg-[#e67200] rounded-[40px] h-auto py-2.5 px-7">
+        <Button className="w-full bg-[#FF6B01] hover:bg-[#e67200] rounded-[40px] h-auto py-2.5 px-7">
           <span onClick={()=>{navigate('/cart')}} className="[font-family:'Baloo_2',Helvetica] font-semibold text-white text-2xl leading-7">
             Add to Cart
           </span>

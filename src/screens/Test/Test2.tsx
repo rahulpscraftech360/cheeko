@@ -90,7 +90,7 @@ export default function Test2(): JSX.Element {
     <section className="relative w-full h-[800px] bg-[#f7fbfe] rounded-[0px_0px_60px_60px] overflow-hidden shadow-[0px_8px_20px_#0000001a]">
       <div className="relative w-full h-full">
         {/* Left orange background with circular patterns */}
-        <div className="absolute  w-[929px] h-[800px] top-0 left-0 bg-[#ff7f11] overflow-hidden" style={leftSectionStyle}>
+        <div className="absolute  w-[929px] h-[800px] top-0 left-0 bg-[#FF6B01] overflow-hidden" style={leftSectionStyle}>
           <div className="relative w-[787px] h-[824px] top-[156px] -left-40">
             {/* Circular patterns */}
             <div className="absolute w-[356px] h-[383px] top-[372px] left-[79px] overflow-hidden rotate-[36.63deg]">
@@ -151,7 +151,7 @@ export default function Test2(): JSX.Element {
             className="absolute w-[690px] h-[690px] left-[525px] object-cover"
             style={teddyStyle}
             alt="AI Teddy Bear"
-            src="/412284286-cb0c8fc0-962a-4d41-bb4c-ac56d03b61c1-1-8.png"
+            src="/device.png"
           />
         )}
 
@@ -178,7 +178,7 @@ export default function Test2(): JSX.Element {
               className="flex flex-col items-start gap-2.5 px-[13px] py-[26px] relative self-stretch w-full flex-[0_0_auto] bg-white rounded-xl overflow-hidden shadow-[1px_1px_20px_#0000001a]"
             >
               <CardContent className="flex flex-col items-center gap-1 relative self-stretch w-full flex-[0_0_auto] p-0">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-bold text-[#ff7f11] text-[32px] text-center tracking-[0] leading-7">
+                <div className="relative self-stretch mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-bold text-[#FF6B01] text-[32px] text-center tracking-[0] leading-7">
                   {stat.percentage}
                 </div>
                 <div className="[font-family:'Arial-Regular',Helvetica] font-normal text-[#1e1e1eb2] text-base text-center leading-4 relative self-stretch tracking-[0]">

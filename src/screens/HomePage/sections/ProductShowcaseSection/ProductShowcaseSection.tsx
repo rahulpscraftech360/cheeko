@@ -67,7 +67,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
                 className="w-full h-full object-contain"
                loop
                 autoPlay
-                src="/video/Animation01.mp4"
+                src="/video/Explode_Animation_Potrait.mp4"
               >
                
               </video>
@@ -78,10 +78,10 @@ export const ProductShowcaseSection = (): JSX.Element => {
         {/* Product Cards Row */}
         <div className="flex items-center gap-2 w-full">
           {/* Product Image Card */}
-          <Card className="flex-1 bg-[#ff7f11] rounded-[20px] h-[163px] overflow-hidden border-0">
+          <Card className="flex-1 bg-[#FF6B01] rounded-[20px] h-[163px] overflow-hidden border-0">
             <CardContent className="flex items-center justify-center ">
               <img
-                className="w-[150px] h-[150px] object-cover"
+                className="w-full h-full object-cover"
                 alt="AI Teddy product"
                 src="/device.png"
               />
@@ -89,7 +89,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
           </Card>
 
           {/* Product Info Card */}
-          <Card className="flex-1 bg-[#ff7f11] rounded-[20px] h-[163px] overflow-hidden border-0">
+          <Card className="flex-1 bg-[#FF6B01] rounded-[20px] h-[163px] overflow-hidden border-0">
             <CardContent className="flex flex-col items-center justify-center p-2.5 py-[21px]">
               <div className="flex flex-col items-start justify-center gap-2.5 w-full">
                 <div className="flex flex-col items-start gap-0.5 w-full">
@@ -138,7 +138,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
                   <Card
                     key={testimonial.id}
                     className={`w-full bg-white rounded-[16px_16px_0px_0px] overflow-hidden ${
-                      testimonial.featured ? "border-b-4 border-[#ff7f11]" : ""
+                      testimonial.featured ? "border-b-4 border-[#FF6B01]" : ""
                     }`}
                   >
                     <CardContent className="px-5 py-6">
@@ -200,7 +200,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
               </Button>
               <Button
                 size="icon"
-                className="w-10 h-10 rounded-[19.5px] bg-[#ff7f11] p-[7px]"
+                className="w-10 h-10 rounded-[19.5px] bg-[#FF6B01] p-[7px]"
               >
                 <img
                   className="w-6 h-6"

@@ -9,7 +9,7 @@ export const FAQSection = (): JSX.Element => {
   const isProductPage = location.pathname === '/product';
 
   return (
-    <section className="relative w-full bg-[#ff7f11] overflow-hidden pt-4 pb-12 px-4">
+    <section className="relative w-full bg-[#FF6B01] overflow-hidden pt-4 pb-12 px-1">
       <div className="container relative mx-auto max-w-[375px] md:max-w-none">
         {/* Decorative circles */}
         <div className="absolute w-full h-full top-0 left-0 pointer-events-none">
@@ -29,16 +29,16 @@ export const FAQSection = (): JSX.Element => {
         </div>
 
         {/* Main content */}
-        <Card className="flex flex-col w-full max-w-[383px] mx-auto md:max-w-[600px] items-center bg-transparent border-none shadow-none min-h-[70vh] justify-center">
+        <Card className="flex flex-col w-full  items-center bg-transparent border-none shadow-none min-h-[70vh] justify-center">
           <CardContent className="flex flex-col items-start gap-5 p-0 w-full">
             <div className="flex flex-col items-start gap-1.5 relative self-stretch w-full">
              
               
-              <div className="relative self-stretch ">
+              <div className="relative self-stretch overflow-visible">
                     <img 
                       src="/maintitle.png" 
                       alt="AI Teddy Bear" 
-                      className="w-full"
+                      className="w-[110%] max-w-[150%] transform scale-108 -mr-[20%]"
                     />
                   </div>
            

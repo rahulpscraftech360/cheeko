@@ -71,7 +71,7 @@ export const PaymentPage = (): JSX.Element => {
   return (
     <div className="bg-[#f7fbfe] min-h-screen pb-24">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-[#FF7F11] z-50 shadow-sm">
+      <header className="fixed top-0 left-0 right-0 bg-[#FF6B01] z-50 shadow-sm">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
@@ -100,31 +100,31 @@ export const PaymentPage = (): JSX.Element => {
           <div className="flex items-center justify-between relative max-w-[375px] mx-auto sm:max-w-none">
             {/* Cart Icon */}
             <div className="flex flex-col items-center z-10">
-              <div className="w-12 h-12 rounded-full bg-[#FF7F11] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#FF6B01] flex items-center justify-center">
                 <ShoppingBagIcon className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xs mt-1 text-[#FF7F11] font-medium">Cart</span>
+              <span className="text-xs mt-1 text-[#FF6B01] font-medium">Cart</span>
             </div>
 
             {/* Home Icon */}
             <div className="flex flex-col items-center z-10">
-              <div className="w-12 h-12 rounded-full bg-[#FF7F11] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#FF6B01] flex items-center justify-center">
                 <HomeIcon className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xs mt-1 text-[#FF7F11] font-medium">Address</span>
+              <span className="text-xs mt-1 text-[#FF6B01] font-medium">Address</span>
             </div>
 
             {/* Payment Icon */}
             <div className="flex flex-col items-center z-10">
-              <div className="w-12 h-12 rounded-full bg-[#FF7F11] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#FF6B01] flex items-center justify-center">
                 <DollarSignIcon className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xs mt-1 text-[#FF7F11] font-medium">Payment</span>
+              <span className="text-xs mt-1 text-[#FF6B01] font-medium">Payment</span>
             </div>
 
             {/* Progress Line */}
             <div className="absolute top-6 left-0 right-0 h-[2px] bg-gray-200">
-              <div className="w-full h-full bg-[#FF7F11]" />
+              <div className="w-full h-full bg-[#FF6B01]" />
             </div>
           </div>
         </div>
@@ -207,7 +207,7 @@ export const PaymentPage = (): JSX.Element => {
                     <input
                       type="text"
                       placeholder="Enter Your Card Number"
-                      className="w-full h-12 px-4 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF7F11] text-sm"
+                      className="w-full h-12 px-4 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF6B01] text-sm"
                     />
                   </div>
 
@@ -219,7 +219,7 @@ export const PaymentPage = (): JSX.Element => {
                       <input
                         type="text"
                         placeholder="Enter Your Expiration Date"
-                        className="w-full h-12 px-4 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF7F11] text-sm"
+                        className="w-full h-12 px-4 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF6B01] text-sm"
                       />
                     </div>
                     <div className="space-y-1">
@@ -229,7 +229,7 @@ export const PaymentPage = (): JSX.Element => {
                       <input
                         type="text"
                         placeholder="Enter Your CVV"
-                        className="w-full h-12 px-4 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF7F11] text-sm"
+                        className="w-full h-12 px-4 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF6B01] text-sm"
                       />
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export const PaymentPage = (): JSX.Element => {
                     <input
                       type="text"
                       placeholder="Enter Your Name on Card"
-                      className="w-full h-12 px-4 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF7F11] text-sm"
+                      className="w-full h-12 px-4 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF6B01] text-sm"
                     />
                   </div>
                 </div>
@@ -249,7 +249,7 @@ export const PaymentPage = (): JSX.Element => {
 
               {/* Proceed to Pay Button */}
               <Button 
-                className="w-full bg-[#FF7F11] text-white text-lg py-6 rounded-full"
+                className="w-full bg-[#FF6B01] text-white text-lg py-6 rounded-full"
                 onClick={handlePayment}
               >
                 Proceed to Pay
@@ -265,7 +265,7 @@ export const PaymentPage = (): JSX.Element => {
                   <div key={index} className="flex justify-between items-center">
                     <span className="text-gray-600 text-lg">{item.name}</span>
                     <div className="flex flex-col items-end">
-                      <span className="text-[#FF7F11] text-xl font-bold">{item.amount}</span>
+                      <span className="text-[#FF6B01] text-xl font-bold">{item.amount}</span>
                       {item.description && (
                         <span className="text-gray-500 text-sm">{item.description}</span>
                       )}
@@ -275,7 +275,7 @@ export const PaymentPage = (): JSX.Element => {
                 <div className="border-t border-gray-200 pt-4 mt-4">
                   <div className="flex justify-between items-center">
                     <span className="text-xl font-bold">Total Amount</span>
-                    <span className="text-[#FF7F11] text-2xl font-bold">$99.9</span>
+                    <span className="text-[#FF6B01] text-2xl font-bold">$99.9</span>
                   </div>
                 </div>
               </div>

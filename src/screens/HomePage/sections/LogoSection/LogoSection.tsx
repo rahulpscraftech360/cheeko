@@ -25,7 +25,7 @@ export const LogoSection = (): JSX.Element => {
         </p>
       </header>
 
-      <Card className="flex flex-col h-[470px] items-start justify-center gap-2.5 px-[7px] py-5 relative self-stretch w-full bg-[#ff7f11] rounded-[20px] overflow-hidden border-none">
+      <Card className="flex flex-col h-[470px] items-start justify-center gap-2.5 px-[7px] py-5 relative self-stretch w-full bg-[#FF6B01] rounded-[20px] overflow-hidden border-none">
         <CardContent className="flex flex-col w-full items-center relative flex-1 grow p-0">
           <div className="flex flex-col w-[295px] items-start gap-5 relative flex-[0_0_auto]">
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto] pt-10">
@@ -94,7 +94,7 @@ export const LogoSection = (): JSX.Element => {
               />
             </div>
 
-            <Button className="flex items-center justify-center gap-2.5 px-7 py-2.5 relative self-stretch w-full bg-[#ff7f11] rounded-[40px] h-auto">
+            <Button className="flex items-center justify-center gap-2.5 px-7 py-2.5 relative self-stretch w-full bg-[#FF6B01] rounded-[40px] h-auto">
               <span className="relative flex-1 mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-semibold text-white text-2xl text-center tracking-[0] leading-7">
                 Buy Now
               </span>
@@ -139,7 +139,7 @@ export const LogoSection = (): JSX.Element => {
               />
             </div>
 
-            <Button className="flex items-center justify-center gap-2.5 px-7 py-2.5 relative self-stretch w-full bg-[#ff7f11] rounded-[40px] h-auto">
+            <Button className="flex items-center justify-center gap-2.5 px-7 py-2.5 relative self-stretch w-full bg-[#FF6B01] rounded-[40px] h-auto">
               <span className="relative flex-1 mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-semibold text-white text-2xl text-center tracking-[0] leading-7">
                 Buy Now
               </span>

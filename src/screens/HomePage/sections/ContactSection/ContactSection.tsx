@@ -23,7 +23,7 @@ export const ContactSection = (): JSX.Element => {
             >
               <CardContent className="p-[13px] py-[26px]">
                 <div className="flex flex-col items-center gap-1 text-center">
-                  <div className="self-stretch [font-family:'Baloo_2',Helvetica] font-bold text-[#ff7f11] text-[32px] leading-7">
+                  <div className="self-stretch [font-family:'Baloo_2',Helvetica] font-bold text-[#FF6B01] text-[32px] leading-7">
                     {card.value}
                   </div>
                   <div className="self-stretch [font-family:'Arial-Regular',Helvetica] font-normal text-[#1e1e1eb2] text-base leading-4">
@@ -41,7 +41,7 @@ export const ContactSection = (): JSX.Element => {
             >
               <CardContent className="p-[13px] py-[26px]">
                 <div className="flex flex-col items-center gap-1 text-center">
-                  <div className="self-stretch [font-family:'Baloo_2',Helvetica] font-bold text-[#ff7f11] text-[32px] leading-7">
+                  <div className="self-stretch [font-family:'Baloo_2',Helvetica] font-bold text-[#FF6B01] text-[32px] leading-7">
                     {statCards[2].value}
                   </div>
                   <div className="self-stretch [font-family:'Arial-Regular',Helvetica] font-normal text-[#1e1e1eb2] text-base leading-4">

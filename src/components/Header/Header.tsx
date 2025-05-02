@@ -37,7 +37,7 @@ export const Header = (): JSX.Element => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 ${isMobile ? 'bg-[#ff7f11]' : 'bg-white'} z-50 `}>
+    <header className={`fixed top-0 left-0 right-0 ${isMobile ? 'bg-[#FF6B01]' : 'bg-white'} z-50 `}>
       <div className="w-full  px-4 sm:px-6 lg:px-8">
         <div className="flex items-center  h-16">
           {/* Logo - Always Left Aligned */}
@@ -59,7 +59,7 @@ export const Header = (): JSX.Element => {
                   <Link
                     key={item.label}
                     to={item.path}
-                    className="text-[#ff7f11] font-medium hover:text-[#ff7f11]/80 transition-colors"
+                    className="text-[#FF6B01] font-medium hover:text-[#FF6B01]/80 transition-colors"
                     onClick={(e) => handleFeatureClick(item.label, e)}
                   >
                     {item.label}
@@ -73,7 +73,7 @@ export const Header = (): JSX.Element => {
           {!isMobile && (
             <div className="flex-shrink-0">
               <Link to="/cart">
-                <Button className="bg-[#ff7f11] text-white hover:bg-[#ff7f11]/80 rounded-full px-6">
+                <Button className="bg-[#FF6B01] text-white hover:bg-[#FF6B01]/80 rounded-full px-6">
                   Cart
                   <ShoppingCart className="w-4 h-4 ml-2" />
                 </Button>
@@ -91,9 +91,9 @@ export const Header = (): JSX.Element => {
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 {isMobileMenuOpen ? (
-                  <X className="h-6 w-6 text-[#ff7f11]" />
+                  <X className="h-6 w-6 text-[#FF6B01]" />
                 ) : (
-                  <MenuIcon className="h-6 w-6 text-[#ff7f11]" />
+                  <MenuIcon className="h-6 w-6 text-[#FF6B01]" />
                 )}
               </Button>
             </div>
@@ -102,13 +102,13 @@ export const Header = (): JSX.Element => {
 
         {/* Mobile Menu */}
         {isMobile && isMobileMenuOpen && (
-          <div className="border-t border-[#ff7f11]/20 bg-white rounded-xl mb-4 mt-4 shadow-lg overflow-hidden">
+          <div className="border-t border-[#FF6B01]/20 bg-white rounded-xl mb-4 mt-4 shadow-lg overflow-hidden">
             <div className="px-4 py-3 space-y-2">
             {menuItems.map((item) => (
               <Link
                 key={item.label}
                 to={item.path}
-                className="block px-4 py-3 rounded-lg text-base font-medium text-[#ff7f11] hover:bg-[#ff7f11]/10 transition-all duration-200 flex items-center gap-2"
+                className="block px-4 py-3 rounded-lg text-base font-medium text-[#FF6B01] hover:bg-[#FF6B01]/10 transition-all duration-200 flex items-center gap-2"
                 onClick={(e) => {
                   setIsMobileMenuOpen(false);
                   handleFeatureClick(item.label, e);

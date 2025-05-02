@@ -56,7 +56,7 @@ export const RelatedProductsSection = (): JSX.Element => {
               <Card
                 key={testimonial.id}
                 className={`flex-1 rounded-[16px_16px_0px_0px] ${
-                  testimonial.highlighted ? "border-b-4 border-[#ff7f11]" : ""
+                  testimonial.highlighted ? "border-b-4 border-[#FF6B01]" : ""
                 }`}
               >
                 <CardContent className="flex flex-col gap-7 p-6">
@@ -101,7 +101,7 @@ export const RelatedProductsSection = (): JSX.Element => {
             </Button>
             <Button
               size="icon"
-              className="w-10 h-10 rounded-[19.5px] bg-[#ff7f11]"
+              className="w-10 h-10 rounded-[19.5px] bg-[#FF6B01]"
             >
               <ArrowRightIcon className="w-6 h-6 text-white" />
             </Button>

@@ -178,7 +178,7 @@ export const PurchaseSection = (): JSX.Element => {
             </div>
 
             {/* Payment Button */}
-            <Button className="w-full py-1 px-7 bg-[#ff7f11] hover:bg-[#e67200] rounded-[40px] text-white">
+            <Button className="w-full py-1 px-7 bg-[#FF6B01] hover:bg-[#e67200] rounded-[40px] text-white">
               <span className="[font-family:'Baloo_2',Helvetica] font-semibold text-xl text-center leading-7">
                 Proceed to Pay
               </span>
@@ -235,7 +235,7 @@ export const PurchaseSection = (): JSX.Element => {
             </div>
 
             {/* Proceed Button */}
-            <Button   onClick={() => navigate("/payment")}  className="w-full py-1 px-7 bg-[#ff7f11] hover:bg-[#e67200] rounded-[40px] text-white">
+            <Button   onClick={() => navigate("/payment")}  className="w-full py-1 px-7 bg-[#FF6B01] hover:bg-[#e67200] rounded-[40px] text-white">
               <span className="[font-family:'Baloo_2',Helvetica] font-semibold text-xl text-center leading-7">
                 Proceed
               </span>

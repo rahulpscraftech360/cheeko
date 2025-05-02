@@ -37,7 +37,7 @@ export const PaymentStatusPage = (): JSX.Element => {
         )}
 
         <Button
-          className="w-full max-w-[400px] bg-[#FF7F11] hover:bg-[#FF7F11]/90 text-white text-xl font-semibold py-6 rounded-full"
+          className="w-full max-w-[400px] bg-[#FF6B01] hover:bg-[#FF6B01]/90 text-white text-xl font-semibold py-6 rounded-full"
           onClick={() => navigate('/')}
         >
           Back to Home

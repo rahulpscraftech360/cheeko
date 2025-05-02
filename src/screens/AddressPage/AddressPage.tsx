@@ -66,7 +66,7 @@ export const AddressPage = (): JSX.Element => {
   return (
     <div className="bg-[#f7fbfe] min-h-screen pb-24">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-[#FF7F11] z-50 shadow-sm">
+      <header className="fixed top-0 left-0 right-0 bg-[#FF6B01] z-50 shadow-sm">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
@@ -95,18 +95,18 @@ export const AddressPage = (): JSX.Element => {
           <div className="flex items-center justify-between relative max-w-[375px] mx-auto sm:max-w-none">
             {/* Cart Icon */}
             <div className="flex flex-col items-center z-10">
-              <div className="w-12 h-12 rounded-full bg-[#FF7F11] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#FF6B01] flex items-center justify-center">
                 <ShoppingBagIcon className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xs mt-1 text-[#FF7F11] font-medium">Cart</span>
+              <span className="text-xs mt-1 text-[#FF6B01] font-medium">Cart</span>
             </div>
 
             {/* Home Icon */}
             <div className="flex flex-col items-center z-10">
-              <div className="w-12 h-12 rounded-full bg-[#FF7F11] flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[#FF6B01] flex items-center justify-center">
                 <HomeIcon className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xs mt-1 text-[#FF7F11] font-medium">Address</span>
+              <span className="text-xs mt-1 text-[#FF6B01] font-medium">Address</span>
             </div>
 
             {/* Payment Icon */}
@@ -119,7 +119,7 @@ export const AddressPage = (): JSX.Element => {
 
             {/* Progress Line */}
             <div className="absolute top-6 left-0 right-0 h-[2px] bg-gray-200">
-              <div className="w-2/3 h-full bg-[#FF7F11]" />
+              <div className="w-2/3 h-full bg-[#FF6B01]" />
             </div>
           </div>
         </div>
