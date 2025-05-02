@@ -1,0 +1,46 @@
+import React from "react";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
+
+export const Section = (): JSX.Element => {
+  return (
+    <section
+      className="relative w-full  h-[600px] bg-[#ff6b01]  overflow-hidden"
+      data-model-id="1:5264"
+    >
+      <div className="flex flex-col items-center justify-center gap-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[725px] px-4">
+        <Card className="bg-transparent border-none shadow-none w-full">
+          <CardContent className="flex flex-col items-center gap-2 p-0">
+            <h2 className="relative self-stretch mt-[-1.00px] [font-family:'Clash_Display-Bold',Helvetica] font-bold text-white text-5xl md:text-6xl text-center tracking-[0] leading-[67.2px]">
+              Meet Our Exciting AI-Powered Toys
+            </h2>
+
+            <p className="relative self-stretch [font-family:'Nunito_Sans',Helvetica] font-normal text-white text-lg text-center tracking-[0] leading-[26px]">
+              Discover a world of fun and learning with Cheeko&#39;s innovative
+              AI toys. Each toy is designed to spark creativity and engage your
+              child&#39;s imagination.
+            </p>
+          </CardContent>
+        </Card>
+
+        <div className="inline-flex items-center gap-3 relative">
+          <Button className="w-60 h-12 bg-black hover:bg-black/90 rounded-[110px] [font-family:'Nunito_Sans',Helvetica] font-semibold text-white text-xl">
+            Pre-Order Now!
+          </Button>
+        </div>
+      </div>
+
+      <img
+        className="absolute w-[333px] h-[500px] top-20 left-0 object-cover"
+        alt="AI toy robot on the left"
+        src="/chatgpt-image-apr-1--2025--04-26-38-pm-2.png"
+      />
+
+      <img
+        className="absolute w-[333px] h-[500px] top-20 right-0 object-cover"
+        alt="AI toy robot on the right"
+        src="/chatgpt-image-apr-1--2025--04-17-42-pm-2.png"
+      />
+    </section>
+  );
+};
