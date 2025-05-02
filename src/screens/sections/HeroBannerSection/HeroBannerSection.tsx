@@ -33,7 +33,7 @@ export const HeroBannerSection = (): JSX.Element => {
     let animationId: number;
     let lastTime = 0;
     const FALL_SPEED = 700; // Reduced from 500 (40% of original speed)
-    const FINAL_POSITION = 150;
+    const FINAL_POSITION = 180;
     const BOUNCE_HEIGHT = 100;
     const BOUNCE_DAMPING = 0.6; // Reduced damping for longer bounce decay
     

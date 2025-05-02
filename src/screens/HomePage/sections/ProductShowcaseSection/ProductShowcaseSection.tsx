@@ -118,7 +118,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
 
       {/* Testimonials Section - Only show if not on product route */}
       {!isProductRoute && (
-        <div className="flex items-center gap-2.5 px-4 py-6 w-full bg-[#d9d9d940]">
+        <div id="mobile-testimonials" className="flex items-center gap-2.5 px-4 py-6 w-full bg-[#d9d9d940]">
           <div className="flex flex-col items-end gap-6 w-full">
             {/* Section Header */}
             <div className="flex flex-col items-center gap-4 w-full">

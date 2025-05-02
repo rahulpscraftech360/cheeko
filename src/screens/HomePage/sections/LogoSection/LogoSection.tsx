@@ -14,7 +14,7 @@ export const LogoSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col w-full max-w-[375px] mx-auto items-center gap-6 px-4 py-0">
+    <section className="mobile-pricing-section flex flex-col w-full max-w-[375px] mx-auto items-center gap-6 px-4 py-0">
       <header className="flex flex-col items-center gap-2 w-full">
         <h2 className="w-full [font-family:'Baloo_2',Helvetica] font-bold text-[#1e1e1e] text-[28px] text-center tracking-[0] leading-6">
           Get Yours Before They&apos;re GOne!

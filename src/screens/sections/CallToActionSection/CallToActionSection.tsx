@@ -20,7 +20,7 @@ export const CallToActionSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col w-full items-center gap-[60px] px-16 py-20">
+    <section className="desktop-pricing-section flex flex-col w-full items-center gap-[60px] px-16 py-20">
       <div className="w-full flex flex-col items-center gap-2">
         <h2 className="w-full [font-family:'Baloo_2',Helvetica] font-bold text-[#1e1e1e] text-[56px] text-center tracking-[0] leading-[72px]">
           Get Yours Before They&apos;re Gone!

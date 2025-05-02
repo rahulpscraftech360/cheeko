@@ -15,7 +15,14 @@ export const Header = (): JSX.Element => {
     { label: "Pricing", path: "/", icon: "💰" },
     { label: "Cart", path: "/cart", icon: <ShoppingCart className="w-4 h-4" /> },
   ];
-
+  
+  const scrollToMobileTestimonials = () => {
+    const testimonialsSection = document.getElementById('mobile-testimonials');
+    if (testimonialsSection) {
+      testimonialsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   // Function to handle scrolling to sections
   const handleFeatureClick = (label: string, e: React.MouseEvent) => {
     if (label === "Features") {
@@ -31,6 +38,39 @@ export const Header = (): JSX.Element => {
         const mainContentSection = document.querySelector('.w-full.bg-\\[\\#f7fbfe\\].py-\\[135px\\]');
         if (mainContentSection) {
           mainContentSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    } else if (label === "Testimonials") {
+      e.preventDefault();
+      if (isMobile) {
+        // For mobile, use the dedicated function to scroll to testimonials
+        scrollToMobileTestimonials();
+      } else {
+        // For desktop, scroll to RelatedProductsSection
+        const relatedProductsSection = document.querySelector('.RelatedProductsSection');
+        if (relatedProductsSection) {
+          relatedProductsSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          // Fallback if the section doesn't have the class
+          const sections = document.querySelectorAll('section');
+          if (sections.length >= 8) {
+            sections[7].scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }
+    }else if (label === "Pricing") {
+      e.preventDefault();
+      if (isMobile) {
+        // For mobile, scroll to LogoSection with the new class
+        const mobilePricingSection = document.querySelector('.mobile-pricing-section');
+        if (mobilePricingSection) {
+          mobilePricingSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        // For desktop, scroll to CallToActionSection with the new class
+        const desktopPricingSection = document.querySelector('.desktop-pricing-section');
+        if (desktopPricingSection) {
+          desktopPricingSection.scrollIntoView({ behavior: 'smooth' });
         }
       }
     }

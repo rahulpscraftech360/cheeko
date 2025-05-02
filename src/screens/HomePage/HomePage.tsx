@@ -85,7 +85,7 @@ export const HomePage = (): JSX.Element => {
       </div>
       
       {/* Full width section outside the max-width container */}
-      {!isMobile && <RelatedProductsSection />}
+      {!isMobile && <div className="RelatedProductsSection"><RelatedProductsSection /></div>}
     
       <div className="bg-[#f7fbfe] w-full max-w-screen-2xl">
         {!isMobile && (

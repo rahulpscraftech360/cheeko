@@ -45,11 +45,11 @@ export const ImageGallerySection = (): JSX.Element => {
 
       <div className="flex items-center justify-between w-full max-w-[1312px] gap-8">
         <Card className="flex w-1/2 h-[609px] bg-[#FF6B01] rounded-[40px] overflow-hidden border-none">
-          <CardContent className="p-[9px] flex items-center justify-center w-full">
+          <CardContent className="flex items-center justify-center w-full">
             <img
               className="w-full h-full object-cover"
               alt="AI Teddy"
-              src="/device.png"
+              src="/Device2.png"
             />
           </CardContent>
         </Card>
