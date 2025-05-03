@@ -17,29 +17,18 @@ export const ImageGallerySection = (): JSX.Element => {
     <section className="flex flex-col w-full items-center gap-[60px] py-16">
       <Card className="w-full max-w-[1312px]  bg-[#FF6B01] rounded-[40px] overflow-hidden border-none">
         <CardContent className="p-0 h-full flex items-center justify-center">
-          {!isPlaying ? (
-            <div 
-              className="relative w-full h-auto  bg-cover bg-center cursor-pointer"
-              onClick={handleVideoClick}
-            >
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140px] h-[140px] flex items-center justify-center">
-                <img
-                  className="w-full h-auto"
-                  alt="PlayIcon button"
-                  src="/solar-play-bold.svg"
-                />
-              </div>
-            </div>
-          ) : (
+         
             <video 
               className="w-full h-full object-contain"
               loop
               autoPlay
+              muted
+              playsInline
               src="/video/Explode_Animation02.mp4"
             >
           
             </video>
-          )}
+     
         </CardContent>
       </Card>
 
@@ -54,16 +43,15 @@ export const ImageGallerySection = (): JSX.Element => {
           </CardContent>
         </Card>
 
-        <Card className="flex w-1/2 bg-[#FF6B01] rounded-[40px] overflow-hidden border-none">
-          <CardContent className="flex flex-col items-start gap-[101px] p-8 py-[76px] w-full">
+        <Card className="flex w-1/2 h-[609px] bg-[#FF6B01] rounded-[40px] overflow-hidden border-none">
+          <CardContent className="flex flex-col items-start justify-between p-8 py-[76px] w-full">
             <div className="flex flex-col items-center gap-5 w-full">
-              <h2 className="self-stretch mt-[-1.00px] font-['Baloo_2',Helvetica] font-bold text-white text-[88px] leading-[80px]">
-                Let&apos;s hug, chat &amp; learn with AI Teddy!
+              <h2 className="self-stretch mt-[-1.00px] font-['Baloo_2',Helvetica] font-bold text-white text-[76px] leading-[80px]">
+              Make Playtime Smarter with CheekoAI!
               </h2>
 
-              <p className="self-stretch font-['Arial-Regular',Helvetica] font-normal text-white text-xl leading-5">
-                Select the perfect AI Chhota Bheem package for your child&#39;s
-                learning adventure.
+              <p className="self-stretch font-['Arial-Regular',Helvetica] font-normal text-white text-xl leading-7 md:leading-8">
+              Choose your favorite CheekoAI companion and bring home the gift of screen-free conversations, learning, and fun.
               </p>
             </div>
 

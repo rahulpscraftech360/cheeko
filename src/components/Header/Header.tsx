@@ -93,13 +93,13 @@ export const Header = (): JSX.Element => {
 
           {/* Desktop Navigation - Center */}
           {!isMobile && (
-            <div className="flex-1 flex justify-center">
-              <nav className="flex items-center space-x-8">
+            <div className="flex-1 flex justify-center ">
+              <nav className="flex items-center gap-12">
                 {menuItems.slice(0, -1).map((item) => (
                   <Link
                     key={item.label}
                     to={item.path}
-                    className="text-[#FF6B01] font-medium hover:text-[#FF6B01]/80 transition-colors"
+                    className="text-black font-medium text-xl  hover:text-[#FF6B01]/80 transition-colors mx-10"
                     onClick={(e) => handleFeatureClick(item.label, e)}
                   >
                     {item.label}

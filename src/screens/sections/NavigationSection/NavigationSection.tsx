@@ -14,7 +14,6 @@ export const NavigationSection = (): JSX.Element => {
     "Features",
     "Try Demo",
     "Testimonials",
-    "Pricing",
     "FAQs",
   ];
 
@@ -31,7 +30,7 @@ export const NavigationSection = (): JSX.Element => {
   const contactInfo = [
     {
       icon: <MapPinIcon className="w-6 h-6" />,
-      text: "123 Innovation Drive, Tech City, CA 94043",
+      text: "CFT360 DESIGN STUDIO PVT LTD's registered office address is Survey No. 7/2, 1st Floor, Divitigeramanahally, Near Bhel, Deepanjalinagar, Bangalore, Bangalore South, Karnataka, India, 560026",
     },
     {
       icon: <PhoneIcon className="w-6 h-6" />,
@@ -39,7 +38,7 @@ export const NavigationSection = (): JSX.Element => {
     },
     {
       icon: <MailIcon className="w-6 h-6" />,
-      text: "temp@gmail.conm",
+      text: "altioaicheeko@gmail.com",
     },
   ];
 
@@ -54,9 +53,9 @@ export const NavigationSection = (): JSX.Element => {
           <div className="flex flex-col items-start gap-6 flex-1">
             <div className="flex flex-col items-start gap-4 w-full">
               <img
-                className="w-[135px] h-9 object-cover"
+                className="w-[332px] h-22 object-cover"
                 alt="Company Logo"
-                src="/image-6.png"
+                src="/logo.png"
               />
               <p className="font-normal text-[#1e1e1eb2] text-base leading-6">
                 Creating the future of play with AI-powered educational toys
@@ -65,9 +64,15 @@ export const NavigationSection = (): JSX.Element => {
             </div>
 
             <div className="flex items-center gap-[22px]">
-              <FacebookIcon className="w-6 h-6 text-[#1e1e1eb2]" />
-              <InstagramIcon className="w-6 h-6 text-[#1e1e1eb2]" />
-              <YoutubeIcon className="w-6 h-6 text-[#1e1e1eb2]" />
+              <a href="https://www.facebook.com/profile.php?id=61574727151719" target="_blank" rel="noopener noreferrer">
+                <FacebookIcon className="w-6 h-6 text-[#1e1e1eb2]" />
+              </a>
+              <a href="https://www.instagram.com/cheekoai/" target="_blank" rel="noopener noreferrer">
+                <InstagramIcon className="w-6 h-6 text-[#1e1e1eb2]" />
+              </a>
+              <a href="https://www.youtube.com/@Cheekoai" target="_blank" rel="noopener noreferrer">
+                <YoutubeIcon className="w-6 h-6 text-[#1e1e1eb2]" />
+              </a>
             </div>
           </div>
 
@@ -79,24 +84,6 @@ export const NavigationSection = (): JSX.Element => {
               </h3>
               <nav className="flex flex-col items-start gap-3 w-full">
                 {quickLinks.map((link, index) => (
-                  <a
-                    key={index}
-                    href="#"
-                    className="w-full font-normal text-[#1e1e1eb2] text-xl leading-8 hover:text-[#1e1e1e] transition-colors"
-                  >
-                    {link}
-                  </a>
-                ))}
-              </nav>
-            </div>
-
-            {/* Support */}
-            <div className="flex flex-col items-start gap-4 flex-1">
-              <h3 className="font-bold text-[#1e1e1e] text-[28px] leading-10 font-['Baloo_2',Helvetica]">
-                Support
-              </h3>
-              <nav className="flex flex-col items-start gap-3">
-                {supportLinks.map((link, index) => (
                   <a
                     key={index}
                     href="#"
@@ -127,6 +114,23 @@ export const NavigationSection = (): JSX.Element => {
                 ))}
               </div>
             </div>
+
+            {/* For New Updates */}
+            <div className="flex flex-col items-start gap-4 w-full md:w-[343px]">
+              <h3 className="font-bold text-[#1e1e1e] text-[28px] leading-10 font-['Baloo_2',Helvetica]">
+                For New Updates
+              </h3>
+              <div className="flex flex-col items-start w-full">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full p-2 border border-[#1e1e1e20] rounded-md text-xl"
+                />
+                <button className="mt-2 px-4 py-2 bg-[#FF6B01] text-white rounded-full hover:bg-[#333] transition-colors">
+                  Subscribe
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -134,7 +138,7 @@ export const NavigationSection = (): JSX.Element => {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 w-full">
           <p className="font-normal text-[#1e1e1eb2] text-xl leading-8">
-            © 2025 AI Chhota Bheem. All rights reserved.
+            © 2025 Cheeko_ai. All rights reserved.
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-[43px]">

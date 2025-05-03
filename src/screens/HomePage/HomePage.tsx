@@ -60,9 +60,9 @@ export const HomePage = (): JSX.Element => {
         <div className="w-full mt-12">
           <TestimonialsSection />
         </div>
-        <div className="w-full mt-12">
+        {/* <div className="w-full mt-12">
           <PricingSection />
-        </div>
+        </div> */}
             {/* Product showcase section for mobile */}
           
           </>
@@ -73,7 +73,7 @@ export const HomePage = (): JSX.Element => {
             <div className="w-full">
               <MainContentSection />
             </div>
-            <div className="w-full bg-black ">
+            <div className="w-full  ">
             <Section />
             </div>
             
@@ -91,7 +91,7 @@ export const HomePage = (): JSX.Element => {
         {!isMobile && (
           <>
             <div className="w-full mt-12">
-              <CallToActionSection />
+              {/* <CallToActionSection /> */}
             </div>
             <div className="w-full mt-12">
               <ProductDetailsSection />

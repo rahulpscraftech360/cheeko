@@ -14,7 +14,7 @@ export const MainContentSection = (): JSX.Element => {
   return (
     <section 
       ref={sectionRef} 
-      className="w-full bg-[#f7fbfe] py-[135px] overflow-hidden"
+      className="w-full bg-[#f7fbfe]  overflow-hidden"
       onMouseEnter={handleMouseEnter}
     >
       <div className="container mx-auto max-w-[1312px] relative">
@@ -23,17 +23,15 @@ export const MainContentSection = (): JSX.Element => {
           className={`relative flex justify-center mb-[74px] transition-all duration-1000 transform ${
             isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
           }`}
-        >
-          <h2 className="relative w-[604px] [font-family:'Baloo_2',Helvetica] font-bold text-[#1e1e1e] text-[64px] text-center tracking-[0] leading-[62px]">
-            Let&apos; s hug, chat &amp; learn with AI Teddy!
+        > <div>
+          <h2 className="relative w-full [font-family:'Baloo_2',Helvetica] font-bold text-[#1e1e1e] text-[86px] text-center tracking-[0] leading-[62px]">
+            Let&apos; s hug, chat &amp; learn with
           </h2>
-          <div className="absolute w-[134px] h-[134px] top-[-58px] right-[189px] rotate-[-158.45deg]">
-            <img
-              className="absolute w-[134px] h-[134px] -top-3  rotate-[200.45deg] object-cover"
-              alt="Saly"
-              src="/saly-43.png"
-            />
+          <h2 className="relative w-full [font-family:'Baloo_2',Helvetica] font-bold text-[#FF6B01] text-[86px] text-center tracking-[0] leading-[62px] mt-8">
+          Cheeko AI Toy!
+          </h2>
           </div>
+         
         </div>
 
         {/* Main Content with Image and Feature Cards */}
@@ -110,85 +108,91 @@ export const MainContentSection = (): JSX.Element => {
 // Feature card data for mapping
 const featureCards = [
   {
-    title: "Voice Interaction",
+    title: "Chat & Learn",
     description:
-      "Speaks & listens like a real buddy, responding to your child's questions and commands.",
-    icon: <MicIcon className="w-11 h-11" />,
-    borderColor: "border-[#6bcb77]",
+      "CheekoAI talks and teaches through natural conversations.",
+      icon: (
+        <img
+          className="w-full h-54"
+          alt="Ic outline color"
+          src="/mic.png"
+        />
+      ),
+    borderColor: "border-[#E73032]",
     position: "left-top",
   },
   {
-    title: "Creative Mode",
+    title: "Fun Learning Games",
     description:
-      "Encourages imagination through drawing, storytelling, and creative play.",
+      "Math, science, and stories turn into playtime adventures..",
     icon: (
       <img
-        className="w-11 h-11"
+        className="w-full h-54"
         alt="Ic outline color"
-        src="/ic_outline-color-lens.svg"
+        src="/mic.png"
       />
     ),
-    borderColor: "border-[#6bcb77]",
+    borderColor: "border-[#E73032]",
     position: "left-bottom",
   },
   {
-    title: "Adaptive Learning",
+    title: "Adapts & Grows",
     description:
-      "Grows smarter with play, adapting to your child's interests and learning pace.",
-    icon: (
-      <img
-        className="w-11 h-11"
-        alt="Flowbite brain"
-        src="/flowbite-brain-outline.svg"
-      />
-    ),
+      "The AI evolves with your child’s interests and learning speed.",
+      icon: (
+        <img
+          className="w-full h-54"
+          alt="Material symbols"
+          src="micyellow.png"
+        />
+      ),
     borderColor: "border-[#ffd700]",
     position: "left-special",
   },
   {
-    title: "Parent Controls",
+    title: "Creative Play Mode",
     description:
-      "Set learning goals, screen time limits, and monitor progress through the parent app.",
+      "Inspire imagination through storytelling and fun challenges.",
     icon: (
       <img
-        className="w-11 h-11"
+        className="w-full h-54"
         alt="Material symbols"
-        src="/Vectorshiled.svg"
+        src="micyellow.png"
       />
     ),
     borderColor: "border-[#ffd700]",
     position: "right-special",
   },
   {
-    title: "Educational Games",
+    title: "Parent Powered",
     description:
-      "Over 100 built-in games that make learning math, science, and language arts fun.",
+      "Stay in charge with filters, goals, and safe settings.",
     icon: (
       <div className="relative w-11 h-11">
         <img
           className="absolute w-[37px] h-[33px] top-1.5 left-1"
           alt="Group"
-          src="/Group.svg"
+          src="/mic.png"
         />
       </div>
     ),
-    borderColor: "border-[#6bcb77]",
+    borderColor: "border-[#E73032]",
     position: "right-top",
   },
   {
-    title: "Storytelling",
+    title: "Personalized Adventures",
     description:
-      "Creates personalized stories featuring your child's name and interests.",
+      "Stories and games customized just for your child!.",
     icon: (
       <div className="relative w-11 h-11">
         <img
           className="absolute w-[37px] h-[38px] top-1.5 left-1"
           alt="Group"
-          src="/mingcute_book-line.svg"
+            src="/mic.png"
         />
       </div>
     ),
-    borderColor: "border-[#6bcb77]",
+    borderColor: "border-[#E73032]",
     position: "right-bottom",
   },
 ];

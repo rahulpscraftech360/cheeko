@@ -10,43 +10,42 @@ export const RelatedProductsSection = (): JSX.Element => {
   const testimonials = [
     {
       id: 1,
-      name: "Jane Doe",
-      title: "Product Designer",
+      name: "Priya M",
+      title: "Mumbai",
       content:
-        "ToyAI has been a game-changer for my daughter's learning journey. She's improved her math skills significantly while having so much fun she doesn't even realize she's learning!",
-      avatar: "/ellipse-76.svg",
-      highlighted: true,
+        "Honestly didn’t think my daughter would love it this much but she’s obsessed!! No screens, just talking and laughing all day. Love it!",
+      avatar: "/priya.png",
+      highlighted: false,
     },
     {
       id: 2,
-      name: "Jane Doe",
-      title: "Product Designer",
+      name: "Sameer D",
+      title: "Pune",
       content:
-        "ToyAI has been a game-changer for my daughter's learning journey. She's improved her math skills significantly while having so much fun she doesn't even realize she's learning!",
-      avatar: "/ellipse-76-1.svg",
+        "I was so tired of saying ‘put down the phone’... Cheeko solved it without me even trying lol. She talks to her Teddy now, asks him homework stuff and all 😂",
+      avatar: "/Sameer.png",
       highlighted: false,
     },
     {
       id: 3,
-      name: "Jane Doe",
-      title: "Product Designer",
+      name: "Ananya S",
+      title: "Bangalore",
       content:
-        "ToyAI has been a game-changer for my daughter's learning journey. She's improved her math skills significantly while having so much fun she doesn't even realize she's learning!",
-      avatar: "/ellipse-76-2.svg",
+        "I wanted something safe and fun for my lil one. CheekoAI is amazing, plus I control what she hears. no ads, no random junk, just fun and learning ❤️",
+      avatar: "/ananya.png",
       highlighted: false,
     },
   ];
 
   return (
     <section className="w-full py-16 bg-[#d9d9d940]">
-      <div className="flex flex-col items-center gap-10 px-16 max-w-[1440px] mx-auto">
+      <div className="flex flex-col items-center gap-10 px-16  mx-auto">
         <div className="flex flex-col items-center gap-2 max-w-[808px]">
           <h2 className="font-bold text-[56px] text-[#1e1e1e] text-center leading-[72px] [font-family:'Baloo_2',Helvetica]">
             Why Parents Love It!
           </h2>
           <p className="text-2xl text-[#1e1e1eb2] text-center leading-8 [font-family:'Arial-Regular',Helvetica]">
-            Join thousands of happy families who have made AI Chhota Bheem part
-            of their children&#39;s learning journey.
+          Trusted by parents. Loved by kids. Built for brighter futures.
           </p>
         </div>
 
@@ -55,7 +54,7 @@ export const RelatedProductsSection = (): JSX.Element => {
             {testimonials.map((testimonial) => (
               <Card
                 key={testimonial.id}
-                className={`flex-1 rounded-[16px_16px_0px_0px] ${
+                className={`flex-1 h-[300px] rounded-[16px_16px_0px_0px] ${
                   testimonial.highlighted ? "border-b-4 border-[#FF6B01]" : ""
                 }`}
               >
@@ -82,7 +81,7 @@ export const RelatedProductsSection = (): JSX.Element => {
                     {[...Array(5)].map((_, index) => (
                       <StarIcon
                         key={index}
-                        className="w-5 h-5 fill-current text-yellow-400"
+                        className="w-5 h-5 fill-current text-green-400"
                       />
                     ))}
                   </div>
@@ -92,7 +91,7 @@ export const RelatedProductsSection = (): JSX.Element => {
           </div>
 
           <div className="flex justify-end gap-4 w-full">
-            <Button
+            {/* <Button
               variant="outline"
               size="icon"
               className="w-10 h-10 rounded-[19.5px] bg-white"
@@ -104,7 +103,7 @@ export const RelatedProductsSection = (): JSX.Element => {
               className="w-10 h-10 rounded-[19.5px] bg-[#FF6B01]"
             >
               <ArrowRightIcon className="w-6 h-6 text-white" />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

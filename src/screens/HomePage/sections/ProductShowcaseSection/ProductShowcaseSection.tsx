@@ -51,18 +51,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
         {/* Video Preview Card */}
         <Card className="w-full bg-transparent rounded-[20px] overflow-hidden ">
           <CardContent className="p-0 h-full">
-            {!isPlaying ? (
-              <div 
-                className="relative w-full h-[377px]  bg-cover bg-center cursor-pointer"
-                onClick={handleVideoClick}
-              >
-                <img
-                  className="absolute w-[60px] h-[60px] top-[159px] left-[140px]"
-                  alt="Play button"
-                  src="/solar-play-bold.svg"
-                />
-              </div>
-            ) : (
+          
               <video 
                 className="w-full h-full object-contain"
                loop
@@ -71,7 +60,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
               >
                
               </video>
-            )}
+          
           </CardContent>
         </Card>
 
