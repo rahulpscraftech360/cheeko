@@ -1,5 +1,5 @@
 import { MicIcon } from "lucide-react";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Card, CardContent } from "../../../components/ui/card";
 
 export const MainContentSection = (): JSX.Element => {
@@ -10,17 +10,39 @@ export const MainContentSection = (): JSX.Element => {
   const handleMouseEnter = () => {
     setIsVisible(true);
   };
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.5, // Trigger when 30% of the section is visible
+      }
+    );
+  
+    const section = sectionRef.current;
+    if (section) observer.observe(section);
+  
+    return () => {
+      if (section) observer.unobserve(section);
+    };
+  }, []);
+  
+
+
 
   return (
     <section 
-      ref={sectionRef} 
-      className="w-full bg-[#f7fbfe]  overflow-hidden"
+    ref={sectionRef} 
+      className="w-full bg-[#f7fbfe] overflow-hidden"
       onMouseEnter={handleMouseEnter}
     >
-      <div className="container mx-auto max-w-[1312px] relative">
+      <div className="container mx-auto max-w-[90vw] relative ">
         {/* Heading Section */}
         <div 
-          className={`relative flex justify-center mb-[74px] transition-all duration-1000 transform ${
+          className={`relative flex z-0 justify-center transition-all duration-1000 transform ${
             isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
           }`}
         > <div>
@@ -31,11 +53,11 @@ export const MainContentSection = (): JSX.Element => {
           Cheeko AI Toy!
           </h2>
           </div>
-         
         </div>
 
         {/* Main Content with Image and Feature Cards */}
-        <div className="flex justify-between items-center">
+        <div className="relative flex justify-between items-center z-10 h-full">
+
           {/* Left Column */}
           <div 
             className={`flex flex-col w-[200px] gap-[180px] transition-all duration-1000 transform ${
@@ -52,7 +74,7 @@ export const MainContentSection = (): JSX.Element => {
 
           {/* Center Image */}
           <img
-            className={`w-[626px] h-[626px] object-cover transition-all duration-1000 transform ${
+            className={`w-[750px] h-[750px] object-cover transition-all duration-1000 transform relative ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
             }`}
             alt="AI Teddy Bear"
@@ -200,7 +222,7 @@ const featureCards = [
 // Helper function to render feature card
 const renderFeatureCard = (card: (typeof featureCards)[0]) => (
   <Card
-    className={`flex flex-col items-start gap-3 bg-white rounded-2xl overflow-hidden border-t-[6px] [border-top-style:solid] ${card.borderColor} shadow-[2px_2px_20px_#0000001f] w-[200px] h-[180px] ${
+    className={`flex flex-col items-start gap-3 bg-white rounded-2xl overflow-hidden border-t-[6px] [border-top-style:solid] ${card.borderColor} shadow-[2px_2px_20px_#0000001f] w-[200px] h-[146px] ${
       card.position.includes("special")
         ? "p-4"
         : card.position.includes("bottom")

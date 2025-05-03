@@ -6,9 +6,30 @@ import {
   PhoneIcon,
   YoutubeIcon,
 } from "lucide-react";
+import { useState } from "react";
 import { Separator } from "../../../components/ui/separator";
-
+import { supabase } from "../../../supabase";
 export const NavigationSection = (): JSX.Element => {
+
+  const [email, setEmail] = useState('');
+  const [subscribeStatus, setSubscribeStatus] = useState('');
+
+  const handleSubscribe = async () => {
+    try {
+      const { error } = await supabase
+        .from('userEmail')
+        .insert([{ email: email }]);
+
+      if (error) throw error;
+
+      setSubscribeStatus('Subscribed successfully!');
+      setEmail('');
+    } catch (error) {
+      setSubscribeStatus('Failed to subscribe. Please try again.');
+      console.error('Error:', error);
+    }
+  };
+
   // Quick links data
   const quickLinks = [
     "Features",
@@ -120,13 +141,24 @@ export const NavigationSection = (): JSX.Element => {
               <h3 className="font-bold text-[#1e1e1e] text-[28px] leading-10 font-['Baloo_2',Helvetica]">
                 For New Updates
               </h3>
+              {/* Update the For New Updates section */}
               <div className="flex flex-col items-start w-full">
                 <input
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   className="w-full p-2 border border-[#1e1e1e20] rounded-md text-xl"
                 />
-                <button className="mt-2 px-4 py-2 bg-[#FF6B01] text-white rounded-full hover:bg-[#333] transition-colors">
+                {subscribeStatus && (
+                  <p className={`text-sm mt-1 ${subscribeStatus.includes('Failed') ? 'text-red-500' : 'text-green-500'}`}>
+                    {subscribeStatus}
+                  </p>
+                )}
+                <button 
+                  onClick={handleSubscribe}
+                  className="mt-2 px-4 py-2 bg-[#FF6B01] text-white rounded-full hover:bg-[#333] transition-colors"
+                >
                   Subscribe
                 </button>
               </div>

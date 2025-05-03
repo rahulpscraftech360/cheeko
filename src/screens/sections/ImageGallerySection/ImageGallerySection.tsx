@@ -56,11 +56,11 @@ export const ImageGallerySection = (): JSX.Element => {
             </div>
 
             <Button
-              onClick={() => navigate('/product')}
+              onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')}
               className={`w-full py-3.5 px-7 bg-black hover:bg-black/90 rounded-[40px] h-auto ${isProductRoute ? 'invisible' : ''}`}
             >
               <span className="font-['Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-2xl text-center leading-7">
-              Pre-Order Now!
+                Pre-Order Now!
               </span>
             </Button>
           </CardContent>

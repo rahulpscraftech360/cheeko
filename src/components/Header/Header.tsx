@@ -79,7 +79,7 @@ export const Header = (): JSX.Element => {
   return (
     <header className={`fixed top-0 left-0 right-0 ${isMobile ? 'bg-[#FF6B01]' : 'bg-white'} z-50 `}>
       <div className="w-full  px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center  h-16">
+        <div className="flex items-center  h-24">
           {/* Logo - Always Left Aligned */}
           <div className="flex-shrink-0">
             <Link to="/">
@@ -112,12 +112,13 @@ export const Header = (): JSX.Element => {
           {/* Cart Button - Right */}
           {!isMobile && (
             <div className="flex-shrink-0">
-              <Link to="/cart">
-                <Button className="bg-[#FF6B01] text-white hover:bg-[#FF6B01]/80 rounded-full px-6">
-                  Cart
-                  <ShoppingCart className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
+              <Button 
+                onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')}
+                className="bg-[#FF6B01] text-white hover:bg-[#FF6B01]/80 rounded-full px-6"
+              >
+                Cart
+                <ShoppingCart className="w-4 h-4 ml-2" />
+              </Button>
             </div>
           )}
 

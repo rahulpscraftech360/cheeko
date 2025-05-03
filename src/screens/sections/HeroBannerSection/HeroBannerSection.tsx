@@ -146,8 +146,8 @@ export const HeroBannerSection = (): JSX.Element => {
             />
           </div>
           <div className="relative w-[510px] md:w-[987px] h-[824px] top-[156px]">
-            <div className="flex flex-col w-3/4 items-center absolute top-0 left-[36px] md:left-10">
-              <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
+            <div className="flex flex-col w-6/4 items-center absolute top-0 left-[36px] md:left-10">
+              <div className="flex flex-col items-start gap-14 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]  w-1/2">
                   <div className="relative mt-[80px]">
                     <img 
@@ -162,12 +162,11 @@ export const HeroBannerSection = (): JSX.Element => {
                 </div>
 
                 <div className="flex items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
-                  <Button onClick={() => navigate('/product')} className="flex-1 justify-center px-5 md:px-7 py-2.5 md:py-3.5 bg-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-xl md:text-2xl h-auto">
+                  <Button  onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')} className="w-[200px] md:w-[250px] justify-center px-5 md:px-7 py-2.5 md:py-3.5 bg-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-xl md:text-2xl h-auto">
                     Pre-Order Now!
                   </Button>
-                  <Button className="flex-1 justify-center px-5 md:px-7 py-2.5 md:py-3.5 bg-transparent border-2 border-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-black hover:text-white text-xl md:text-2xl h-auto">
+                  <Button className="w-[200px] md:w-[250px] justify-center px-5 md:px-7 py-2.5 md:py-3.5 bg-transparent border-2 border-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-black hover:text-white text-xl md:text-2xl h-auto">
                     Explore Toys
-                    <PlayIcon className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                   </Button>
                 </div>
               </div>

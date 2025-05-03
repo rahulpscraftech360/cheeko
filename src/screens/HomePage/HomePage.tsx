@@ -22,8 +22,8 @@ export const HomePage = (): JSX.Element => {
   const { isMobile } = useScreenSize();
 
   return (
-    <div className="bg-[#f7fbfe] flex flex-col items-center w-full">
-      <Header />
+    <div className="bg-[#f7fbfe] flex flex-col items-center w-full min-h-screen">
+        <Header />
 
       {/* Render HeroBannerSection outside the max-width container for desktop */}
       {!isMobile && <HeroBannerSection />}
@@ -100,7 +100,7 @@ export const HomePage = (): JSX.Element => {
         )}
       </div>
       
-      {!isMobile && <NavigationSection />}
+     <NavigationSection />
     </div>
   );
 };

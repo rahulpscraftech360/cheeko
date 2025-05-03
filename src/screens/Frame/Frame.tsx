@@ -25,6 +25,13 @@ export const Frame = (): JSX.Element => {
             </Button>
 
             <Button
+              onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')}
+              className="justify-center px-7 py-3.5 bg-black rounded-[40px] h-auto"
+            >
+              <span className="font-['Baloo_2'] font-semibold text-[#ffffffee] text-2xl">Pre-Order Now!</span>
+            </Button>
+
+            <Button
               variant="outline"
               className="h-auto px-6 py-1 rounded-[32px] border-2 border-solid border-black bg-transparent hover:bg-black/5 [font-family:'Nunito_Sans',Helvetica] font-semibold text-black text-sm leading-7"
             >

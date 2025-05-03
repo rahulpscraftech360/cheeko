@@ -207,3 +207,10 @@ export const FAQSection = (): JSX.Element => {
     </div>
   );
 };
+
+<Button
+  onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')}
+  className="justify-center px-7 py-3.5 bg-black rounded-[40px] h-auto"
+>
+  <span className="font-['Baloo_2'] font-semibold text-[#ffffffee] text-2xl">Pre-Order Now!</span>
+</Button>
