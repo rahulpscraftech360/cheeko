@@ -5,111 +5,105 @@ export const FeaturesSection = (): JSX.Element => {
   const features = [
     {
       id: 1,
-      title: "Creative Mode",
+      title: "Chat & Learn",
       description:
-        "Encourages imagination through drawing, storytelling, and creative play.",
-      icon: (
-        <img
-          className="w-11 h-11"
-          alt="Ic outline "
-          src="/ic_outline-color-lens.svg"
-        />
-      ),
-      borderColor: "border-[#6bcb77]",
+        "CheekoAI talks and teaches through natural conversations.",
+        icon: (
+          <img
+            className="w-full h-54"
+            alt="Ic outline color"
+            src="/1.png"
+          />
+        ),
+      borderColor: "border-[#E73032]",
     },
     {
       id: 2,
-      title: "Voice Interaction",
+      title: "Adapts & Grows",
       description:
-        "Speaks & listens like a real buddy, responding to your child's questions and commands.",
+        "The AI evolves with your child’s interests and learning speed.",
         icon: (
           <img
-            className="w-11 h-11"
-            alt="Ic outline "
-            src="/material-symbols_mic-outline-rounded.svg"
+            className="w-full h-54"
+            alt="Material symbols"
+            src="/2.png"
           />
         ),
-     
-      
       borderColor: "border-[#ffd700]",
     },
     {
       id: 3,
-      title: "Adaptive Learning",
+      title: "Fun Learning Games",
       description:
-        "Grows smarter with play, adapting to your child's interests and learning pace.",
+        "Math, science, and stories turn into playtime adventures..",
       icon: (
         <img
-          className="w-11 h-11"
-          alt="Flowbite brain"
-           src="/material-symbols-light_privacy-tip-outline-rounded (1).svg"
-        />
-      ),
-      borderColor: "border-[#6bcb77]",
-    },
-    {
-     
-      id: 4,
-      title: "Parent Controls",
-      description:
-        "Set learning goals, screen time limits, and monitor progress through the parent app.",
-      icon: (
-        <img
-          className="w-11 h-11"
-          alt="Material symbols"
-            src="/flowbite-brain-outline.svg"
-         
+          className="w-full h-54"
+          alt="Ic outline color"
+          src="/3.png"
         />
       ),
       borderColor: "border-[#ffd700]",
     },
     {
-      id: 5,
-      title: "Educational Games",
+     
+      id: 4,
+      title: "Parent Powered",
       description:
-        "Over 100 built-in games that make learning math, science, and language arts fun.",
+        "Stay in charge with filters, goals, and safe settings.",
       icon: (
         <div className="relative w-11 h-11">
           <img
             className="absolute w-[37px] h-[33px] top-1.5 left-1"
             alt="Group"
-            src="/Group.svg"
+            src="/4.png"
           />
         </div>
       ),
-      borderColor: "border-[#6bcb77]",
+      borderColor: "border-[#E73032]",
+    },
+    {
+      id: 5,
+      title: "Creative Play Mode",
+    description:
+      "Inspire imagination through storytelling and fun challenges.",
+    icon: (
+      <img
+        className="w-full h-54"
+        alt="Material symbols"
+        src="4.png"
+      />
+    ),
+      borderColor: "border-[#E73032]",
     },
     {
       id: 6,
-      title: "Storytelling",
-      description:
-        "Creates personalized stories featuring your child's name and interests.",
-      icon: (
-        <div className="relative w-11 h-11">
-          <img
-            className="absolute w-[37px] h-[38px] top-1.5 left-1"
-            alt="Group"
-            src="/mingcute_book-line (1).svg"
-          />
-        </div>
-      ),
+      title: "Personalized Adventures",
+    description:
+      "Stories and games customized just for your child!.",
+    icon: (
+      <div className="relative w-11 h-11">
+        <img
+          className="absolute w-[37px] h-[38px] top-1.5 left-1"
+          alt="Group"
+            src="/6.png"
+        />
+      </div>
+    ),
       borderColor: "border-[#ffd700]",
     },
   ];
 
   return (
-    <section className="flex flex-col w-full items-start gap-[40px]">
+    <section className="flex flex-col w-full items-start gap-[40px] mt-6">
       <div className="flex flex-col items-center relative w-full">
-        <div className="flex items-center justify-center relative w-full">
-          <h2 className="relative flex-1 mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-bold text-[#1e1e1e] text-[32px] text-center tracking-[0] leading-8">
-            Let&apos;s hug, chat &amp; learn with AI Teddy!
+        <div className="flex  flex-col items-center justify-center relative w-full gap-3 ">
+          <h2 className="relative flex-1 mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-bold text-[#1e1e1e] text-5xl text-center tracking-[0] leading-12">
+            Let&apos;s hug, chat &amp; learn with 
           </h2>
+          <h2 className="relative flex-1 mt-[-1.00px] [font-family:'Baloo_2',Helvetica] font-bold text-[#FF6B01] text-5xl text-center tracking-[0] leading-8"> Cheeko AI Toy</h2>
 
-          <img
-            className="absolute w-[52px] h-[52px] top-[22px] right-[38px] object-cover"
-            alt="Saly"
-            src="/saly-43.png"
-          />
+        
         </div>
 
         <div className="w-full h-[368px] mt-9 flex items-center justify-center">

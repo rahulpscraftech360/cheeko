@@ -13,7 +13,7 @@ export const Header = (): JSX.Element => {
     { label: "Demo", path: "/", icon: "🎮" },
     { label: "Testimonials", path: "/", icon: "💬" },
     { label: "Pricing", path: "/", icon: "💰" },
-    { label: "Cart", path: "/cart", icon: <ShoppingCart className="w-4 h-4" /> },
+    // { label: "Cart", path: "/cart", icon: <ShoppingCart className="w-4 h-4" /> },
   ];
   
   const scrollToMobileTestimonials = () => {

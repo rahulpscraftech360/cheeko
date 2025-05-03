@@ -11,9 +11,9 @@ export const ContactSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full px-4 py-6 relative">
+    <section className="w-full px-4 py-2 relative">
       {/* Increased margin to ensure full visibility of the overlapping image */}
-      <div className="mt-[300px] relative z-20">
+      <div className="mt-[180px] relative z-20">
         <div className="grid grid-cols-2 gap-2">
           {/* First two cards in the 2-column grid */}
           {statCards.slice(0, 2).map((card, index) => (

@@ -7,30 +7,30 @@ import { useState } from "react";
 const testimonials = [
   {
     id: 1,
-    name: "Jane Doe",
-    title: "Product Designer",
-    image: "/ellipse-76.svg",
-    review:
-      "ToyAI has been a game-changer for my daughter's learning journey. She's improved her math skills significantly while having so much fun she doesn't even realize she's learning!",
-    featured: true,
+    name: "Priya M",
+    title: "Mumbai",
+    content:
+      "Honestly didn’t think my daughter would love it this much but she’s obsessed!! No screens, just talking and laughing all day. Love it!",
+    avatar: "/priya.png",
+    highlighted: false,
   },
   {
     id: 2,
-    name: "Jane Doe",
-    title: "Product Designer",
-    image: "/ellipse-76-1.svg",
-    review:
-      "ToyAI has been a game-changer for my daughter's learning journey. She's improved her math skills significantly while having so much fun she doesn't even realize she's learning!",
-    featured: false,
+    name: "Sameer D",
+    title: "Pune",
+    content:
+      "I was so tired of saying ‘put down the phone’... Cheeko solved it without me even trying lol. She talks to her Teddy now, asks him homework stuff and all 😂",
+    avatar: "/Sameer.png",
+    highlighted: false,
   },
   {
     id: 3,
-    name: "Jane Doe",
-    title: "Product Designer",
-    image: "/ellipse-76-2.svg",
-    review:
-      "ToyAI has been a game-changer for my daughter's learning journey. She's improved her math skills significantly while having so much fun she doesn't even realize she's learning!",
-    featured: false,
+    name: "Ananya S",
+    title: "Bangalore",
+    content:
+      "I wanted something safe and fun for my lil one. CheekoAI is amazing, plus I control what she hears. no ads, no random junk, just fun and learning ❤️",
+    avatar: "/ananya.png",
+    highlighted: false,
   },
 ];
 
@@ -66,13 +66,13 @@ export const ProductShowcaseSection = (): JSX.Element => {
 
         {/* Product Cards Row */}
         <div className="flex items-center gap-2 w-full">
-          {/* Product Image Card */}
+          {/* Product avatar Card */}
           <Card className="flex-1 bg-[#FF6B01] rounded-[20px] h-[163px] overflow-hidden border-0">
             <CardContent className="flex items-center justify-center ">
               <img
                 className="w-full h-full object-cover"
                 alt="AI Teddy product"
-                src="/device.png"
+                src="/Device2.png"
               />
             </CardContent>
           </Card>
@@ -126,9 +126,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
                 {testimonials.map((testimonial) => (
                   <Card
                     key={testimonial.id}
-                    className={`w-full bg-white rounded-[16px_16px_0px_0px] overflow-hidden ${
-                      testimonial.featured ? "border-b-4 border-[#FF6B01]" : ""
-                    }`}
+                    className={`w-full bg-white rounded-[16px_16px_0px_0px] overflow-hidden `}
                   >
                     <CardContent className="px-5 py-6">
                       <div className="flex flex-col items-center justify-center gap-5 w-full">
@@ -138,7 +136,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
                             <img
                               className="relative w-[85.8px] h-[85.8px] mt-[-12.90px] mb-[-24.90px] ml-[-18.90px]"
                               alt="User avatar"
-                              src={testimonial.image}
+                              src={testimonial.avatar}
                             />
                             <div className="flex flex-col items-start gap-0.5 flex-1">
                               <h4 className="w-full mt-[-1.00px] font-['Baloo_2',Helvetica] font-bold text-[#1b1b1b] text-xl leading-7">
@@ -152,7 +150,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
 
                           {/* Review Text */}
                           <p className="w-full font-['Arial-Regular',Helvetica] font-normal text-[#1e1e1eb2] text-base leading-6">
-                            {testimonial.review}
+                            {testimonial.content}
                           </p>
                         </div>
 
@@ -175,7 +173,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="flex items-center justify-end gap-4 w-full">
+            {/* <div className="flex items-center justify-end gap-4 w-full">
               <Button
                 variant="outline"
                 size="icon"
@@ -197,7 +195,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
                   src="/majesticons-arrow-up-2.svg"
                 />
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       )}

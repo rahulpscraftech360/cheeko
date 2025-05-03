@@ -32,15 +32,15 @@ export const Section = (): JSX.Element => {
       </div>
 
       <img
-        className="absolute w-[333px] h-[500px] top-20 left-0 object-cover"
+        className="absolute w-[333px] h-[500px] top-20 left-2 object-cover"
         alt="AI toy robot on the left"
-        src="/chatgpt-image-apr-1--2025--04-26-38-pm-2.png"
+        src="/Puppy_01 1.png"
       />
 
       <img
-        className="absolute w-[333px] h-[500px] top-20 right-0 object-cover"
+        className="absolute w-[373px] h-[500px] top-20 right-2 object-cover"
         alt="AI toy robot on the right"
-        src="/chatgpt-image-apr-1--2025--04-17-42-pm-2.png"
+        src="/penquin.png"
       />
     </section>
   );

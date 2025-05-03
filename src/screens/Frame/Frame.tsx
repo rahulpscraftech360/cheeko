@@ -25,13 +25,6 @@ export const Frame = (): JSX.Element => {
             </Button>
 
             <Button
-              onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')}
-              className="justify-center px-7 py-3.5 bg-black rounded-[40px] h-auto"
-            >
-              <span className="font-['Baloo_2'] font-semibold text-[#ffffffee] text-2xl">Pre-Order Now!</span>
-            </Button>
-
-            <Button
               variant="outline"
               className="h-auto px-6 py-1 rounded-[32px] border-2 border-solid border-black bg-transparent hover:bg-black/5 [font-family:'Nunito_Sans',Helvetica] font-semibold text-black text-sm leading-7"
             >
@@ -42,15 +35,15 @@ export const Frame = (): JSX.Element => {
       </Card>
 
       <img
-        className="absolute w-[131px] h-[196px] top-[244px] left-0 mt-4 object-cover"
+        className="absolute w-[131px] h-[196px] top-[244px] left-3 mt-4 object-cover"
         alt="AI toy robot"
-        src="/chatgpt-image-apr-1--2025--04-26-38-pm-2.png"
+        src="/Puppy_01 1.png"
       />
 
       <img
-        className="absolute w-[131px] h-[196px] top-[244px] right-0 mt-4 object-cover"
+        className="absolute w-[140px] h-[196px] top-[244px] right-3 mt-4 object-cover"
         alt="AI toy companion"
-        src="/chatgpt-image-apr-1--2025--04-17-42-pm-2.png"
+        src="/penquin.png"
       />
     </div>
   );

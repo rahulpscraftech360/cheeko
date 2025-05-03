@@ -36,7 +36,7 @@ export const HomePage = (): JSX.Element => {
               <FAQSection />
             </div>
 
-            <div className="relative w-full" style={{ marginTop: '-38%', marginBottom: '-50%', zIndex: 30 }}>
+            <div className="relative w-full" style={{ marginTop: '-32%', marginBottom: '-50%', zIndex: 30 }}>
               <TeddyImage />
             </div>
           
@@ -54,9 +54,9 @@ export const HomePage = (): JSX.Element => {
             <div className="w-full mt-8">
               <ProductShowcaseSection/>
             </div>
-            <div className="w-full mt-12">
+            {/* <div className="w-full mt-12">
           <LogoSection />
-        </div>
+        </div> */}
         <div className="w-full mt-12">
           <TestimonialsSection />
         </div>
