@@ -54,8 +54,11 @@ export const ProductShowcaseSection = (): JSX.Element => {
           
               <video 
                 className="w-full h-full object-contain"
-               loop
+                loop
                 autoPlay
+                muted
+                playsInline
+                preload="auto"
                 src="/video/Explode_Animation_Potrait.mp4"
               >
                
