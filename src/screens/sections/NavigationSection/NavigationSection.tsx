@@ -31,12 +31,12 @@ export const NavigationSection = (): JSX.Element => {
   };
 
   // Quick links data
-  const quickLinks = [
-    "Features",
-    "Try Demo",
-    "Testimonials",
-    "FAQs",
-  ];
+  // const quickLinks = [
+  //   "Features",
+  //   "Try Demo",
+  //   "Testimonials",
+  //   "FAQs",
+  // ];
 
   // Support links data
   const supportLinks = [
@@ -50,25 +50,38 @@ export const NavigationSection = (): JSX.Element => {
   // Contact information data
   const contactInfo = [
     {
-      icon: <MapPinIcon className="w-6 h-6" />,
-      text: "CFT360 DESIGN STUDIO PVT LTD's registered office address is Survey No. 7/2, 1st Floor, Divitigeramanahally, Near Bhel, Deepanjalinagar, Bangalore, Bangalore South, Karnataka, India, 560026",
+      icon: <img 
+      src="/material-symbols_mail.png" 
+      alt="Facebook" 
+      className="w-6 h-6"
+    />,
+     
+      text: "CFT360 DESIGN STUDIO PVT LTD, Survey No. 7/2, 1st Floor, Divitigeramanahally, Deepanjalinagar, Bangalore Karnataka, India, 560026",
     },
     {
-      icon: <PhoneIcon className="w-6 h-6" />,
-      text: "12345678790",
+      icon: <img 
+      src="/ic_baseline-phone.png" 
+      alt="Facebook" 
+      className="w-6 h-6"
+    />,
+      text: "+91 8310896240",
     },
     {
-      icon: <MailIcon className="w-6 h-6" />,
-      text: "altioaicheeko@gmail.com",
+      icon: <img 
+      src="/material-symbols_mail.png" 
+      alt="Facebook" 
+      className="w-6 h-6"
+    />,
+      text: "hr@altio.me",
     },
   ];
 
   // Footer policies data
-  const policies = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
-
+  // const policies = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
+       const policies = ['']
   return (
     <footer className="w-full bg-[#ffffffb2] shadow-[4px_0px_20px_#0000001f] py-12 mt-10">
-      <div className="container px-16 flex flex-col gap-10">
+      <div className="container  flex flex-col gap-10">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10">
           {/* Company Information */}
           <div className="flex flex-col items-start gap-6 flex-1">
@@ -86,20 +99,32 @@ export const NavigationSection = (): JSX.Element => {
 
             <div className="flex items-center gap-[22px]">
               <a href="https://www.facebook.com/profile.php?id=61574727151719" target="_blank" rel="noopener noreferrer">
-                <FacebookIcon className="w-6 h-6 text-[#1e1e1eb2]" />
+                <img 
+                  src="/ri_facebook-fill.png" 
+                  alt="Facebook" 
+                  className="w-6 h-6"
+                />
               </a>
               <a href="https://www.instagram.com/cheekoai/" target="_blank" rel="noopener noreferrer">
-                <InstagramIcon className="w-6 h-6 text-[#1e1e1eb2]" />
+              <img 
+                  src="/mdi_instagram.png" 
+                  alt="Facebook" 
+                  className="w-6 h-6"
+                />
               </a>
               <a href="https://www.youtube.com/@Cheekoai" target="_blank" rel="noopener noreferrer">
-                <YoutubeIcon className="w-6 h-6 text-[#1e1e1eb2]" />
+              <img 
+                  src="/mdi_youtube.png" 
+                  alt="Facebook" 
+                  className="w-6 h-6"
+                />
               </a>
             </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-start gap-[67px] flex-1 lg:flex-none lg:w-auto">
             {/* Quick Links */}
-            <div className="flex flex-col items-start gap-4 flex-1">
+            {/* <div className="flex flex-col items-start gap-4 flex-1">
               <h3 className="font-bold text-[#1e1e1e] text-[28px] leading-10 font-['Baloo_2',Helvetica]">
                 Quick Links
               </h3>
@@ -114,7 +139,7 @@ export const NavigationSection = (): JSX.Element => {
                   </a>
                 ))}
               </nav>
-            </div>
+            </div> */}
 
             {/* Contact Us */}
             <div className="flex flex-col items-start gap-4 w-full md:w-[343px]">
@@ -125,7 +150,7 @@ export const NavigationSection = (): JSX.Element => {
                 {contactInfo.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-2.5 p-2.5 w-full"
+                    className="flex items-center gap-2.5 py-2.5 w-full"
                   >
                     {item.icon}
                     <span className="flex-1 font-normal text-[#1e1e1eb2] text-xl leading-8">
@@ -168,12 +193,12 @@ export const NavigationSection = (): JSX.Element => {
 
         <Separator className="w-full h-px bg-[#1e1e1e20]" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 w-full">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
           <p className="font-normal text-[#1e1e1eb2] text-xl leading-8">
-            © 2025 Cheeko_ai. All rights reserved.
+            © 2025 Cheekoai.in. All rights reserved.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-[43px]">
+          {/* <div className="flex flex-col md:flex-row items-center gap-4 md:gap-[43px]">
             {policies.map((policy, index) => (
               <a
                 key={index}
@@ -183,7 +208,7 @@ export const NavigationSection = (): JSX.Element => {
                 {policy}
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -23,10 +23,10 @@ export const Section = (): JSX.Element => {
 
         <div className="inline-flex items-center gap-3 relative">
           <Button 
-            onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')}
-            className="w-60 h-12 bg-black hover:bg-black/90 rounded-[110px] [font-family:'Nunito_Sans',Helvetica] font-semibold text-white text-xl"
+            onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')}
+            className="w-70 h-12 bg-black hover:bg-black/90 rounded-[110px] [font-family:'Nunito_Sans',Helvetica] font-semibold text-white text-xl"
           >
-            Pre-Order Now!
+            Pre-Order Now – ₹4999
           </Button>
         </div>
       </div>

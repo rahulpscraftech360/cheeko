@@ -10,10 +10,8 @@ export const Header = (): JSX.Element => {
 
   const menuItems = [
     { label: "Features", path: "/", icon: "✨" },
-    { label: "Demo", path: "/", icon: "🎮" },
     { label: "Testimonials", path: "/", icon: "💬" },
-    { label: "Pricing", path: "/", icon: "💰" },
-    // { label: "Cart", path: "/cart", icon: <ShoppingCart className="w-4 h-4" /> },
+    ...(isMobile ? [] : [{ label: "Pricing", path: "/", icon: "💰" }]),
   ];
   
   const scrollToMobileTestimonials = () => {
@@ -34,8 +32,8 @@ export const Header = (): JSX.Element => {
           featuresSection.scrollIntoView({ behavior: 'smooth' });
         }
       } else {
-        // For desktop, scroll to MainContentSection
-        const mainContentSection = document.querySelector('.w-full.bg-\\[\\#f7fbfe\\].py-\\[135px\\]');
+        // For desktop, scroll to MainContentSection using the new specific class
+        const mainContentSection = document.querySelector('.desktop-features-section');
         if (mainContentSection) {
           mainContentSection.scrollIntoView({ behavior: 'smooth' });
         }
@@ -79,7 +77,7 @@ export const Header = (): JSX.Element => {
   return (
     <header className={`fixed top-0 left-0 right-0 ${isMobile ? 'bg-[#FF6B01]' : 'bg-white'} z-50 `}>
       <div className="w-full  px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center  h-24">
+        <div className="flex items-center  h-20">
           {/* Logo - Always Left Aligned */}
           <div className="flex-shrink-0">
             <Link to="/">
@@ -93,13 +91,13 @@ export const Header = (): JSX.Element => {
 
           {/* Desktop Navigation - Center */}
           {!isMobile && (
-            <div className="flex-1 flex justify-center ">
-              <nav className="flex items-center gap-12">
+            <div className="flex-1 flex justify-center items-center">
+              <nav className="inline-flex items-center space-x-12">
                 {menuItems.slice(0, -1).map((item) => (
                   <Link
                     key={item.label}
                     to={item.path}
-                    className="text-black font-medium text-xl  hover:text-[#FF6B01]/80 transition-colors mx-10"
+                    className="text-black font-medium text-xl hover:text-[#FF6B01]/80 transition-colors"
                     onClick={(e) => handleFeatureClick(item.label, e)}
                   >
                     {item.label}
@@ -113,7 +111,7 @@ export const Header = (): JSX.Element => {
           {!isMobile && (
             <div className="flex-shrink-0">
               <Button 
-                onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')}
                 className="bg-[#FF6B01] text-white hover:bg-[#FF6B01]/80 rounded-full px-6"
               >
                 Cart

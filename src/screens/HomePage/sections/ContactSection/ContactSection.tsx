@@ -4,9 +4,9 @@ import { Card, CardContent } from "../../../../components/ui/card";
 export const ContactSection = (): JSX.Element => {
   // Data for the stat cards
   const statCards = [
-    { value: "99%", label: "Parent Satisfaction" },
+    { value: "90%", label: "Accurate Responses" },
     { value: "24/7", label: "Learning & Fun" },
-    { value: "5M+", label: "Happy Children" },
+    { value: "8h+", label: "Battery Life" },
    
   ];
 

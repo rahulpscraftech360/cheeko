@@ -52,14 +52,14 @@ export const FAQSection = (): JSX.Element => {
               {!isProductPage && (
                 <Button 
                   className="flex-1 justify-center   py-2.5 md:py-3.5 bg-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-xl md:text-2xl h-auto"
-                  onClick={() => navigate('/product')}
+                  onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')}
                 >
-                  Pre-Order Now!
+                  Pre-Order Now – ₹4999
                 </Button>
               )}
-              <Button className="flex-1 justify-center py-2.5 md:py-3.5 bg-transparent border-2 border-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-black hover:text-white text-xl md:text-2xl h-auto">
+              {/* <Button className="flex-1 justify-center py-2.5 md:py-3.5 bg-transparent border-2 border-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-black hover:text-white text-xl md:text-2xl h-auto">
                 Explore Toys
-              </Button>
+              </Button> */}
             </div>
           </CardContent>
         </Card>

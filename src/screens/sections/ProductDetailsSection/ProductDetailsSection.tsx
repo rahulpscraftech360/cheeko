@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@radix-ui/react-accordion";
+import { PlusCircle, X } from "lucide-react";
 
 
 export const ProductDetailsSection = (): JSX.Element => {
@@ -47,7 +48,7 @@ export const ProductDetailsSection = (): JSX.Element => {
         <img 
       src="/Group.png"
       alt="Group illustration"
-      className="w-[501px] h-[306px] object-cover mx-auto mt-6"
+      className="w-auto  h-auto  object-cover mx-auto mt-6"
     />
   </div>
       </div>
@@ -60,10 +61,14 @@ export const ProductDetailsSection = (): JSX.Element => {
               value={`item-${index}`}
               className="border border-[#d9d9d9] rounded-2xl mb-6 overflow-hidden"
             >
-              <AccordionTrigger className="px-4 py-4 hover:no-underline">
+              <AccordionTrigger className="px-4 py-4 hover:no-underline flex justify-between items-center w-full">
                 <span className="font-['Baloo_2',Helvetica] font-medium text-[#1e1e1e] text-lg md:text-[22px] leading-6 text-left">
-                  {item.question}
+                  {item.question} 
                 </span>
+                <div className="flex-shrink-0 ml-2">
+                  {/* <PlusCircle className="w-6 h-6 shrink-0 transition-transform [&[data-state=open]_&]:hidden" />
+                  <X className="w-6 h-6 shrink-0 hidden transition-transform [&[data-state=open]_&]:block" /> */}
+                </div>
               </AccordionTrigger>
               <AccordionContent className="px-4 pb-4">
                 <p className="font-['Arial-Regular',Helvetica] font-normal text-[#1e1e1eb2] text-[13px] leading-5">

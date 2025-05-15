@@ -70,7 +70,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
         {/* Product Cards Row */}
         <div className="flex items-center gap-2 w-full">
           {/* Product avatar Card */}
-          <Card className="flex-1 bg-[#FF6B01] rounded-[20px] h-[163px] overflow-hidden border-0">
+          <Card className="flex-1 bg-[#FF6B01] rounded-[20px] h-[183px] overflow-hidden border-0">
             <CardContent className="flex items-center justify-center ">
               <img
                 className="w-full h-full object-cover"
@@ -81,25 +81,24 @@ export const ProductShowcaseSection = (): JSX.Element => {
           </Card>
 
           {/* Product Info Card */}
-          <Card className="flex-1 bg-[#FF6B01] rounded-[20px] h-[163px] overflow-hidden border-0">
+          <Card className="flex-1 bg-[#FF6B01] rounded-[20px] h-[183px] overflow-hidden border-0">
             <CardContent className="flex flex-col items-center justify-center p-2.5 py-[21px]">
               <div className="flex flex-col items-start justify-center gap-2.5 w-full">
                 <div className="flex flex-col items-start gap-0.5 w-full">
                   <h3 className="w-full  font-['Baloo_2',Helvetica] font-bold text-white text-xl leading-5">
-                    Let&apos;s hug, chat &amp; learn with AI Teddy!
+                   Make Playtime Smater with CheekoAI!
                   </h3>
                   <p className="w-full font-['Arial-Regular',Helvetica] font-normal text-white text-[8px] leading-[10px]">
-                    Select the perfect AI Chhota Bheem package for your
-                    child&#39;s learning adventure.
+                    Choose your favorite CheekoAI companion and bring home the gift of screen-free conversations, learning, and fun.
                   </p>
                 </div>
-                {!isProductRoute ? ( <Button   onClick={() => navigate('/product')} className="w-full py-2 px-4 bg-black rounded-[40px] h-auto">
+                {!isProductRoute ? ( <Button     onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')} className="w-full py-2 px-4 bg-black rounded-[40px] h-auto">
                   <span className="font-['Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-[10px] leading-3">
-                  Pre-Order Now!
+                  Pre-Order Now – ₹4999
                   </span>
-                </Button>):(<Button   onClick={() => navigate('/product')} className="w-full invisible  py-1 px-4 bg-black rounded-[40px] h-auto">
+                </Button>):(<Button     onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')}  className="w-full invisible  py-1 px-4 bg-black rounded-[40px] h-auto">
                   <span className="font-['Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-[10px] leading-3">
-                  Pre-Order Now!
+                  Pre-Order Now – ₹4999
                   </span>
                 </Button>)}
               </div>
@@ -119,8 +118,7 @@ export const ProductShowcaseSection = (): JSX.Element => {
                   Why Parents Love It!
                 </h2>
                 <p className="w-full font-['Arial-Regular',Helvetica] font-normal text-[#1e1e1eb2] text-xs text-center leading-4">
-                  Join thousands of happy families who have made AI Chhota Bheem
-                  part of their children&#39;s learning journey.
+                  Trusted by parents. Loved by kids. Built for brighter futures.
                 </p>
               </div>
 

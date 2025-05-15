@@ -70,7 +70,7 @@ export const HomePage = (): JSX.Element => {
           // Desktop view
           <>
             {/* HeroBannerSection moved outside this container */}
-            <div className="w-full">
+            <div className="desktop-features-section w-full ">
               <MainContentSection />
             </div>
             <div className="w-full  ">

@@ -15,9 +15,9 @@ export const HeroBannerSection = (): JSX.Element => {
   const [statsVisibility, setStatsVisibility] = useState(0);
 
   const statsData = [
-    { value: "99%", label: "Parent Satisfaction" },
+    { value: "90%", label: "Accurate Responses" },
     { value: "24/7", label: "Learning & Fun" },
-    { value: "5M+ ", label: "Happy Children" },
+    { value: "8h+ ", label: "Battery Life" },
   ];
 
   const [bounceCount, setBounceCount] = useState(0);
@@ -30,7 +30,7 @@ export const HeroBannerSection = (): JSX.Element => {
     let animationId: number;
     let lastTime = 0;
     const FALL_SPEED = 700;
-    const FINAL_POSITION = 360;
+    const FINAL_POSITION = 200; // Changed from 360 to 260 to position teddy higher
     const BOUNCE_HEIGHT = 100;
     const BOUNCE_DAMPING = 0.6;
     
@@ -116,28 +116,24 @@ export const HeroBannerSection = (): JSX.Element => {
   const teddyStyle: React.CSSProperties = {
     position: 'absolute',
     transform: `translateY(${teddyPosition}px)`,
-    left: '695px',
-    width: '690px',
-    height: '690px',
+    width: 'auto',
+    height: 'auto',
+    maxWidth: '100%',
     transition: 'transform 0.04s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
     opacity: teddyPosition > -700 ? Math.min((teddyPosition + 700) / 200, 1) : 0,
   };
 
   return (
     <section className="relative w-full h-screen bg-[#f7fbfe] overflow-hidden shadow-[0px_8px_20px_#0000001a] ">
-      <div className="relative w-full h-full  ">
-      <img
-              className="absolute w-[168px] md:w-[259px] h-[133px] md:h-[205px] bottom-0 right-0 -rotate-0"
-              alt="leaf2"
-              src="/leaf2.png"
-            />
-      <div className=" absolute w-[148px] md:w-[229px] h-[143px] md:h-[220px] top-[616px] left-[86%] rotate-180" style={rightSectionStyle}>
-         
-          
-          
-       
-        </div>
-        <div className="absolute w-[600px] md:w-[1069px] h-screen top-0 left-0 bg-[#FF6B01] overflow-hidden rounded-[0px_0px_0px_0px]" style={leftSectionStyle}>
+      <div className="relative w-full h-full">
+        <img
+          className="absolute w-[100px] sm:w-[130px] md:w-[200px] lg:w-[259px] h-[80px] sm:h-[100px] md:h-[160px] lg:h-[205px] bottom-0 right-0 -rotate-0 z-10"
+          alt="leaf2"
+          src="/leaf2.png"
+        />
+        
+        {/* Orange left section */}
+        <div className="absolute w-full sm:w-[70%] md:w-[65%] lg:w-[1069px] h-screen top-0 left-0 bg-[#FF6B01] overflow-hidden rounded-[0px_0px_0px_0px]" style={leftSectionStyle}>
           <div className="absolute bottom-0 left-0">
             <img
               className="w-[158px] md:w-[221px] h-[153px] md:h-[153px]"
@@ -145,7 +141,7 @@ export const HeroBannerSection = (): JSX.Element => {
               src="/left.png"
             />
           </div>
-          <div className="relative w-[510px] md:w-[987px] h-[824px] top-[156px]">
+          <div className="relative w-full sm:w-[600px] md:w-[800px] lg:w-[987px] h-screen top-[156px]">
             <div className="flex flex-col w-6/4 items-center absolute top-0 left-[36px] md:left-10">
               <div className="flex flex-col items-start gap-14 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]  w-1/2">
@@ -153,34 +149,33 @@ export const HeroBannerSection = (): JSX.Element => {
                     <img 
                       src="/maintitle2.png" 
                       alt="AI Teddy Bear" 
-                      className="w-full mt-10"
+                      className="w-full max-w-[100%] sm:max-w-[70%] md:max-w-[80%] lg:max-w-[100%] mt-6 sm:mt-8 md:mt-10"
                     />
                   </div>
-                  {/* <p className="relative self-stretch [font-family:'Arial-Regular',Helvetica] font-normal text-white text-base md:text-xl tracking-[0] leading-5 md:leading-7">
-                    CheekoAI brings your child’s favorite toy to life with conversations, games, and learning adventures - without a single screen!Designed to grow smarter with your child and safer with your control.
-                  </p> */}
+             
                 </div>
 
                 <div className="flex items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
-                  <Button  onClick={() => window.open('https://pages.razorpay.com/pl_QBiR5ZRuouU1ZH/view', '_blank', 'noopener,noreferrer')} className="w-[200px] md:w-[250px] justify-center px-5 md:px-7 py-2.5 md:py-3.5 bg-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-xl md:text-2xl h-auto">
-                    Pre-Order Now!
+                  <Button  onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')} className="w-[300px] md:w-[300px] justify-center px-5 md:px-7 py-2.5 md:py-3.5 bg-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-xl md:text-2xl h-auto">
+                     Pre-Order Now – ₹4999
                   </Button>
-                  <Button className="w-[200px] md:w-[250px] justify-center px-5 md:px-7 py-2.5 md:py-3.5 bg-transparent border-2 border-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-black hover:text-white text-xl md:text-2xl h-auto">
-                    Explore Toys
-                  </Button>
+                
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Teddy image */}
         {teddyVisible && (
-          <div className="absolute w-full flex left-[497px] md:left-[685px]" style={{ 
+          <div className="absolute w-full flex justify-center sm:justify-start sm:left-[35%] md:left-[40%] lg:left-[45%] translate-x-[-50%]" style={{ 
             zIndex: 10,
-            pointerEvents: 'none'
+            pointerEvents: 'none',
+            top: '50%',
+            transform: 'translateY(-50%)'
           }}>
             <img
-              className="object-contain max-w-[447px] md:max-w-[690px] max-h-[60vh] w-auto h-auto"
+              className="object-contain max-w-[300px] sm:max-w-[400px] md:max-w-[547px] lg:max-w-[690px] max-h-[60vh] w-auto h-auto"
               style={{
                 ...teddyStyle,
                 position: 'relative',
@@ -193,7 +188,8 @@ export const HeroBannerSection = (): JSX.Element => {
         )}
        
 
-        <div className="flex flex-col w-[104px] md:w-[161px] items-start gap-2 md:gap-3 absolute top-[30%] left-[78%]" style={rightSectionStyle}>
+        {/* Stats cards - updated positioning */}
+        <div className="flex flex-col w-[104px] md:w-[161px] items-start gap-2 md:gap-3 absolute top-[35%] right-[5%] sm:right-[8%] md:right-[10%] lg:right-[12%]" style={rightSectionStyle}>
           {statsData.map((stat, index) => (
             <Card
               key={index}
