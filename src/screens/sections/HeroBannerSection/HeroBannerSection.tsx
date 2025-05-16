@@ -124,7 +124,7 @@ export const HeroBannerSection = (): JSX.Element => {
   };
 
   return (
-    <section className="relative w-full h-screen bg-[#f7fbfe] overflow-hidden shadow-[0px_8px_20px_#0000001a] ">
+    <section className=" w-full h-screen bg-[#f7fbfe] overflow-hidden  ">
       <div className="relative w-full h-full">
         <img
           className="absolute w-[100px] sm:w-[130px] md:w-[200px] lg:w-[259px] h-[80px] sm:h-[100px] md:h-[160px] lg:h-[205px] bottom-0 right-0 -rotate-0 z-10"
