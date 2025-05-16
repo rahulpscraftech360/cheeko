@@ -60,7 +60,7 @@ export const ImageGallerySection = (): JSX.Element => {
               className={`w-full py-3.5 px-7 bg-black hover:bg-black/90 rounded-[40px] h-auto ${isProductRoute ? 'invisible' : ''}`}
             >
               <span className="font-['Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-2xl text-center leading-7">
-                Pre-Order Now – ₹4999
+                Pre-Order Now
               </span>
             </Button>
           </CardContent>

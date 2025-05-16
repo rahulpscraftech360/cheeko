@@ -37,6 +37,11 @@ export const FAQSection = (): JSX.Element => {
               
               <div className="relative self-stretch overflow-visible">
                     <img 
+                      src="/preorder.png" 
+                      alt="Pre-order mobile" 
+                      className="w-[70%] max-w-[100%] transform scale-108 mb-4"
+                    />
+                    <img 
                       src="/maintitleMobile.png" 
                       alt="AI Teddy Bear" 
                       className="w-[110%] max-w-[150%] transform scale-108 "
@@ -54,7 +59,7 @@ export const FAQSection = (): JSX.Element => {
                   className="flex-1 justify-center   py-2.5 md:py-3.5 bg-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-xl md:text-2xl h-auto"
                   onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')}
                 >
-                  Pre-Order Now – ₹4999
+                  Pre-Order Now
                 </Button>
               )}
               {/* <Button className="flex-1 justify-center py-2.5 md:py-3.5 bg-transparent border-2 border-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-black hover:text-white text-xl md:text-2xl h-auto">

@@ -26,7 +26,7 @@ export const Section = (): JSX.Element => {
             onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')}
             className="w-70 h-12 bg-black hover:bg-black/90 rounded-[110px] [font-family:'Nunito_Sans',Helvetica] font-semibold text-white text-xl"
           >
-            Pre-Order Now – ₹4999
+            Pre-Order Now
           </Button>
         </div>
       </div>

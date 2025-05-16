@@ -21,7 +21,7 @@ export const Frame = (): JSX.Element => {
 
           <div className="flex items-center gap-2">
             <Button   onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')} className="h-auto px-6 py-1 rounded-[32px] bg-black hover:bg-black/90 [font-family:'Nunito_Sans',Helvetica] font-semibold text-white text-sm leading-7">
-              Pre-Order Now – ₹4999
+              Pre-Order Now
             </Button>
 
             {/* <Button

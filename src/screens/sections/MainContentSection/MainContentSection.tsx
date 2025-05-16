@@ -74,7 +74,7 @@ export const MainContentSection = (): JSX.Element => {
 
           {/* Center Image */}
           <img
-            className={`w-[750px] h-[750px] object-cover transition-all duration-1000 transform relative ${
+            className={`w-[650px] h-[650px] object-cover transition-all duration-1000 transform relative ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
             }`}
             alt="AI Teddy Bear"

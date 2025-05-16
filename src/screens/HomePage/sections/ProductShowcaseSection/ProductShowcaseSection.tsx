@@ -94,11 +94,11 @@ export const ProductShowcaseSection = (): JSX.Element => {
                 </div>
                 {!isProductRoute ? ( <Button     onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')} className="w-full py-2 px-4 bg-black rounded-[40px] h-auto">
                   <span className="font-['Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-[10px] leading-3">
-                  Pre-Order Now – ₹4999
+                  Pre-Order Now
                   </span>
                 </Button>):(<Button     onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')}  className="w-full invisible  py-1 px-4 bg-black rounded-[40px] h-auto">
                   <span className="font-['Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-[10px] leading-3">
-                  Pre-Order Now – ₹4999
+                  Pre-Order Now
                   </span>
                 </Button>)}
               </div>

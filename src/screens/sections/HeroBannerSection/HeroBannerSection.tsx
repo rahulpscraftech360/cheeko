@@ -133,7 +133,7 @@ export const HeroBannerSection = (): JSX.Element => {
         />
         
         {/* Orange left section */}
-        <div className="absolute w-full sm:w-[70%] md:w-[65%] lg:w-[1069px] h-screen top-0 left-0 bg-[#FF6B01] overflow-hidden rounded-[0px_0px_0px_0px]" style={leftSectionStyle}>
+        <div className="absolute w-full sm:w-[70%] md:w-[65%] lg:w-[58%] h-screen top-0 left-0 bg-[#FF6B01] overflow-hidden rounded-[0px_0px_0px_0px]" style={leftSectionStyle}>
           <div className="absolute bottom-0 left-0">
             <img
               className="w-[158px] md:w-[221px] h-[153px] md:h-[153px]"
@@ -147,9 +147,14 @@ export const HeroBannerSection = (): JSX.Element => {
                 <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]  w-1/2">
                   <div className="relative mt-[80px]">
                     <img 
+                      src="/preorder.png" 
+                      alt="Pre-order mobile" 
+                      className="w-full max-w-[30%] sm:max-w-[30%] md:max-w-[30%] lg:max-w-[30%] mb-4"
+                    />
+                    <img 
                       src="/maintitle2.png" 
                       alt="AI Teddy Bear" 
-                      className="w-full max-w-[100%] sm:max-w-[70%] md:max-w-[80%] lg:max-w-[100%] mt-6 sm:mt-8 md:mt-10"
+                      className="w-full max-w-[80%] sm:max-w-[60%] md:max-w-[60%] lg:max-w-[70%] mt-0"
                     />
                   </div>
              
@@ -157,7 +162,7 @@ export const HeroBannerSection = (): JSX.Element => {
 
                 <div className="flex items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
                   <Button  onClick={() => window.open('https://rzp.io/rzp/uOIscPfX', '_blank', 'noopener,noreferrer')} className="w-[300px] md:w-[300px] justify-center px-5 md:px-7 py-2.5 md:py-3.5 bg-black rounded-[40px] [font-family:'Baloo_2',Helvetica] font-semibold text-[#ffffffee] text-xl md:text-2xl h-auto">
-                     Pre-Order Now – ₹4999
+                     Pre-Order Now
                   </Button>
                 
                 </div>
@@ -175,7 +180,7 @@ export const HeroBannerSection = (): JSX.Element => {
             transform: 'translateY(-50%)'
           }}>
             <img
-              className="object-contain max-w-[300px] sm:max-w-[400px] md:max-w-[547px] lg:max-w-[690px] max-h-[60vh] w-auto h-auto"
+              className="object-contain max-w-[300px] sm:max-w-[400px] md:max-w-[447px] lg:max-w-[690px] max-h-[60vh] w-auto h-auto"
               style={{
                 ...teddyStyle,
                 position: 'relative',
