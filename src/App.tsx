@@ -6,21 +6,36 @@ import { PaymentPage } from "./screens/PaymentPage/PaymentPage";
 import { PaymentStatusPage } from "./screens/PaymentStatusPage/PaymentStatusPage";
 import { ProductPage } from "./screens/ProductPage/ProductPage";
 
+// Global style to reset margin and padding
+const globalStyle = `
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+`;
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        {/* <Route path="/product" element={<ProductPage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/address" element={<AddressPage />} />
-        <Route path="/payment" element={<PaymentPage />} />
-        <Route path="/payment-status" element={<PaymentStatusPage />} /> */}
-       
-      </Routes>
-    </BrowserRouter>
+    <>
+      <style>{globalStyle}</style>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/product" element={<ProductPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/address" element={<AddressPage />} />
+          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/payment-status" element={<PaymentStatusPage />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }

@@ -39,7 +39,7 @@ export const MainContentSection = (): JSX.Element => {
       className="w-full bg-[#f7fbfe] overflow-hidden"
       onMouseEnter={handleMouseEnter}
     >
-      <div className="container mx-auto max-w-[90vw] relative ">
+      <div className="container  relative  ">
         {/* Heading Section */}
         <div 
           className={`relative flex z-0 justify-center transition-all duration-1000 transform ${
@@ -60,13 +60,18 @@ export const MainContentSection = (): JSX.Element => {
 
           {/* Left Column */}
           <div 
-            className={`flex flex-col w-[200px] md:ml-[-66px] lg:ml-0 gap-[220px] transition-all duration-1000 transform ${
+            className={`flex flex-col w-[200px] lg:ml-0 gap-[110px] transition-all duration-1000 transform mb-10 ${
               isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
             }`}
           >
             {renderFeatureCard(
               featureCards.find((card) => card.position === "left-top")!,
             )}
+            <div className="md:ml-[30%] lg:ml-[60%]">
+              {renderFeatureCard(
+                featureCards.find((card) => card.position === "left-special")!,
+              )}
+            </div>
             {renderFeatureCard(
               featureCards.find((card) => card.position === "left-bottom")!,
             )}
@@ -74,7 +79,7 @@ export const MainContentSection = (): JSX.Element => {
 
           {/* Center Image */}
           <img
-            className={`w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] md:w-[550px] md:h-[550px] lg:w-[650px] lg:h-[650px] object-cover transition-all duration-1000 transform relative ml-[10px] ${
+            className={`w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] md:w-[400px] md:h-[500px] lg:w-[560px] lg:h-[560px] object-cover transition-all duration-1000 transform relative ml-[10px] mb-0 mt-auto ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
             }`}
             alt="AI Teddy Bear"
@@ -83,42 +88,21 @@ export const MainContentSection = (): JSX.Element => {
 
           {/* Right Column */}
           <div 
-            className={`flex flex-col w-[200px] gap-[220px] transition-all duration-1000 transform ${
+            className={`flex flex-col w-[200px] gap-[110px] transition-all duration-1000 transform mb-10  ${
               isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
             }`}
           >
             {renderFeatureCard(
               featureCards.find((card) => card.position === "right-top")!,
             )}
+            <div className="md:ml-[-30%] lg:ml-[-60%]">
+              {renderFeatureCard(
+                featureCards.find((card) => card.position === "right-special")!,
+              )}
+            </div>
             {renderFeatureCard(
               featureCards.find((card) => card.position === "right-bottom")!,
             )}
-          </div>
-        </div>
-
-        {/* Special Cards (positioned differently in the original) */}
-        <div 
-          className={`absolute top-[52%] md:top-[56%] lg:top-[50%] left-[20%] md:left-[4%] lg:left-[20%] w-[200px] transition-all duration-1000 transform ${
-            isVisible ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-          }`}
-        >
-          <div className="flex items-center">
-            {renderFeatureCard(
-              featureCards.find((card) => card.position === "left-special")!,
-            )}
-          </div>
-        </div>
-
-        <div 
-          className={`absolute top-[52%] md:top-[54%] lg:top-[50%]  right-[20%] md:right-[-5%] lg:right-[20%] w-[200px] transition-all duration-1000 transform ${
-            isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
-          }`}
-        >
-          <div className="flex items-center">
-            {renderFeatureCard(
-              featureCards.find((card) => card.position === "right-special")!,
-            )}
-            <div className="flex-1"></div> {/* Spacer */}
           </div>
         </div>
       </div>
@@ -191,7 +175,7 @@ const featureCards = [
     icon: (
       <div className="relative w-11 h-11">
         <img
-          className="absolute w-[33px] h-[33px] left-1"
+          className="absolute w-[30px] h-[30px] left-1"
           alt="Group"
           src="/fa6-solid_hand-holding-heart.svg"
         />
@@ -207,7 +191,7 @@ const featureCards = [
     icon: (
       <div className="relative w-11 h-11">
         <img
-          className="absolute w-[37px] h-[38px] left-1"
+          className="absolute w-[31px] h-[31px] left-1"
           alt="Group"
             src="/grommet-icons_map.svg"
         />
