@@ -141,7 +141,7 @@ export const HeroBannerSection = (): JSX.Element => {
               src="/left.png"
             />
           </div>
-          <div className="relative w-full sm:w-[600px] md:w-[800px] lg:w-[987px] h-screen top-[156px]">
+          <div className="relative w-full  h-screen top-[10%]">
             <div className="flex flex-col w-6/4 items-center absolute top-0 left-[36px] md:left-10">
               <div className="flex flex-col items-start gap-14 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]  w-1/2">
@@ -149,12 +149,12 @@ export const HeroBannerSection = (): JSX.Element => {
                     <img 
                       src="/preorder.png" 
                       alt="Pre-order mobile" 
-                      className="w-full max-w-[30%] sm:max-w-[30%] md:max-w-[30%] lg:max-w-[30%] mb-4"
+                      className="w-full max-w-[40%] sm:max-w-[40%] md:max-w-[40%] lg:max-w-[40%] mb-4"
                     />
                     <img 
                       src="/maintitle2.png" 
                       alt="AI Teddy Bear" 
-                      className="w-full max-w-[80%] sm:max-w-[60%] md:max-w-[60%] lg:max-w-[70%] mt-0"
+                      className="w-full max-w-[80%] sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%] mt-0"
                     />
                   </div>
              
@@ -180,7 +180,7 @@ export const HeroBannerSection = (): JSX.Element => {
             transform: 'translateY(-50%)'
           }}>
             <img
-              className="object-contain max-w-[300px] sm:max-w-[400px] md:max-w-[447px] lg:max-w-[690px] max-h-[60vh] w-auto h-auto"
+              className="object-contain max-w-[300px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-[790px] xl:max-w-[890px] max-h-[60vh] sm:max-h-[65vh] md:max-h-[65vh] lg:max-h-[75vh] w-auto h-auto"
               style={{
                 ...teddyStyle,
                 position: 'relative',
@@ -194,7 +194,7 @@ export const HeroBannerSection = (): JSX.Element => {
        
 
         {/* Stats cards - updated positioning */}
-        <div className="flex flex-col w-[104px] md:w-[161px] items-start gap-2 md:gap-3 absolute top-[35%] right-[5%] sm:right-[8%] md:right-[10%] lg:right-[12%]" style={rightSectionStyle}>
+        <div className="flex flex-col w-[104px] sm:w-[120px] md:w-[140px] lg:w-[161px] items-start gap-2 md:gap-3 absolute top-[35%] right-[5%] sm:right-[8%] md:right-[10%] lg:right-[12%]" style={rightSectionStyle}>
           {statsData.map((stat, index) => (
             <Card
               key={index}
