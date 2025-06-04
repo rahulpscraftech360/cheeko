@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { AddressPage } from "./screens/AddressPage/AddressPage";
 import { CartPage } from "./screens/CartPage/CartPage";
 import { HomePage } from "./screens/HomePage/HomePage";
@@ -27,7 +27,7 @@ export default function App() {
   return (
     <>
       <style>{globalStyle}</style>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
@@ -37,7 +37,7 @@ export default function App() {
           <Route path="/payment" element={<PaymentPage />} />
           <Route path="/payment-status" element={<PaymentStatusPage />} /> */}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
