@@ -214,7 +214,7 @@ export const NavigationSection = (): JSX.Element => {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
           <a
-            href="/privacy-policy"
+            href="/#/privacy-policy"
             className="font-normal text-[#1e1e1eb2] text-xl leading-8 hover:text-[#1e1e1e] transition-colors cursor-pointer"
           >
             Privacy Policy

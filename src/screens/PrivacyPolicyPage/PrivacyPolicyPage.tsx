@@ -21,12 +21,11 @@ export const PrivacyPolicyPage = (): JSX.Element => {
           </h2>
           <p className="text-[#1e1e1eb2] mb-4">
             Welcome to the Privacy Policy for Cheeko - Parental App, developed
-            by Craftech360, CFT360 DESIGN STUDIO PVT LTD. This policy outlines
-            how we collect, use, disclose, and protect your information when you
-            use our application to interact with our AI Toy for Kids, which
-            offers features like storytelling, puzzle-solving, and math
-            tutoring, along with parental controls for toy activation, Wi-Fi
-            setup, and customization.
+            by Altio AI Pvt. Ltd. This policy outlines how we collect, use,
+            disclose, and protect your information when you use our application
+            to interact with our AI Toy for Kids, which offers features like
+            storytelling, puzzle-solving, and math tutoring, along with parental
+            controls for toy activation, Wi-Fi setup, and customization.
           </p>
 
           <h2 className="font-bold text-[#1e1e1e] text-[28px] mt-8 mb-4">
@@ -49,8 +48,7 @@ export const PrivacyPolicyPage = (): JSX.Element => {
               software program provided by the Company.
             </li>
             <li>
-              <strong>Company:</strong> Refers to Craftech360, CFT360 DESIGN
-              STUDIO PVT LTD.
+              <strong>Company:</strong> Refers to Altio AI Pvt. Ltd.
             </li>
             <li>
               <strong>Country:</strong> Refers to Karnataka, India.
@@ -298,9 +296,9 @@ export const PrivacyPolicyPage = (): JSX.Element => {
               <strong>Phone:</strong> +91 8310896240
             </li>
             <li>
-              <strong>Address:</strong> CFT360 DESIGN STUDIO PVT LTD, Survey No.
-              7/2, 1st Floor, Divitigeramanahally, Deepanjalinagar, Bangalore,
-              Karnataka, India, 560026
+              <strong>Address:</strong> Altio AI Pvt. Ltd., Survey No. 7/2, 1st
+              Floor, Divitigeramanahally, Deepanjalinagar, Bangalore, Karnataka,
+              India, 560026
             </li>
           </ul>
         </div>
