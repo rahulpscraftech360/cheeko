@@ -23,7 +23,7 @@ export const HomePage = (): JSX.Element => {
 
   return (
     <div className="bg-[#f7fbfe] flex flex-col items-center w-full min-h-screen">
-        <Header />
+      <Header />
 
       {/* Render HeroBannerSection outside the max-width container for desktop */}
       {!isMobile && <HeroBannerSection />}
@@ -36,35 +36,37 @@ export const HomePage = (): JSX.Element => {
               <FAQSection />
             </div>
 
-            <div className="relative w-full" style={{ marginTop: '-32%', marginBottom: '-50%', zIndex: 30 }}>
+            <div
+              className="relative w-full"
+              style={{ marginTop: "-32%", marginBottom: "-50%", zIndex: 30 }}
+            >
               <TeddyImage />
             </div>
-          
+
             <div className="w-full">
               <ContactSection />
             </div>
-          
+
             {/* Features section for mobile */}
             <div className="w-full FeaturesSection">
               <FeaturesSection />
             </div>
             <div className="w-full">
-            <Frame />
+              <Frame />
             </div>
             <div className="w-full mt-8">
-              <ProductShowcaseSection/>
+              <ProductShowcaseSection />
             </div>
             {/* <div className="w-full mt-12">
           <LogoSection />
         </div> */}
-        <div className="w-full mt-12">
-          <TestimonialsSection />
-        </div>
-        {/* <div className="w-full mt-12">
+            <div className="w-full mt-12">
+              <TestimonialsSection />
+            </div>
+            {/* <div className="w-full mt-12">
           <PricingSection />
         </div> */}
             {/* Product showcase section for mobile */}
-          
           </>
         ) : (
           // Desktop view
@@ -74,33 +76,35 @@ export const HomePage = (): JSX.Element => {
               <MainContentSection />
             </div>
             <div className="w-full  ">
-            <Section />
+              <Section />
             </div>
-            
+
             <div className="w-full">
-            <ImageGallerySection />
+              <ImageGallerySection />
             </div>
           </>
         )}
       </div>
-      
+
       {/* Full width section outside the max-width container */}
-      {!isMobile && <div className="RelatedProductsSection"><RelatedProductsSection /></div>}
-    
+      {!isMobile && (
+        <div className="RelatedProductsSection">
+          <RelatedProductsSection />
+        </div>
+      )}
+
       <div className="bg-[#f7fbfe] w-full max-w-screen-2xl">
         {!isMobile && (
           <>
-            <div className="w-full mt-12">
-              {/* <CallToActionSection /> */}
-            </div>
+            <div className="w-full mt-12">{/* <CallToActionSection /> */}</div>
             <div className="w-full mt-12">
               <ProductDetailsSection />
             </div>
           </>
         )}
       </div>
-      
-     <NavigationSection />
+
+      <NavigationSection />
     </div>
   );
 };

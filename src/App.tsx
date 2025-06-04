@@ -5,6 +5,7 @@ import { HomePage } from "./screens/HomePage/HomePage";
 import { PaymentPage } from "./screens/PaymentPage/PaymentPage";
 import { PaymentStatusPage } from "./screens/PaymentStatusPage/PaymentStatusPage";
 import { ProductPage } from "./screens/ProductPage/ProductPage";
+import { PrivacyPolicyPage } from "./screens/PrivacyPolicyPage/PrivacyPolicyPage";
 
 // Global style to reset margin and padding
 const globalStyle = `
@@ -29,6 +30,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           {/* <Route path="/product" element={<ProductPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/address" element={<AddressPage />} />

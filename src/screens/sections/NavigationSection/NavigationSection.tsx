@@ -10,23 +10,22 @@ import { useState } from "react";
 import { Separator } from "../../../components/ui/separator";
 import { supabase } from "../../../supabase";
 export const NavigationSection = (): JSX.Element => {
-
-  const [email, setEmail] = useState('');
-  const [subscribeStatus, setSubscribeStatus] = useState('');
+  const [email, setEmail] = useState("");
+  const [subscribeStatus, setSubscribeStatus] = useState("");
 
   const handleSubscribe = async () => {
     try {
       const { error } = await supabase
-        .from('userEmail')
+        .from("userEmail")
         .insert([{ email: email }]);
 
       if (error) throw error;
 
-      setSubscribeStatus('Subscribed successfully!');
-      setEmail('');
+      setSubscribeStatus("Subscribed successfully!");
+      setEmail("");
     } catch (error) {
-      setSubscribeStatus('Failed to subscribe. Please try again.');
-      console.error('Error:', error);
+      setSubscribeStatus("Failed to subscribe. Please try again.");
+      console.error("Error:", error);
     }
   };
 
@@ -50,35 +49,37 @@ export const NavigationSection = (): JSX.Element => {
   // Contact information data
   const contactInfo = [
     {
-      icon: <img 
-      src="/material-symbols_mail.png" 
-      alt="Facebook" 
-      className="w-6 h-6"
-    />,
-     
+      icon: (
+        <img
+          src="/material-symbols_mail.png"
+          alt="Facebook"
+          className="w-6 h-6"
+        />
+      ),
+
       text: "CFT360 DESIGN STUDIO PVT LTD, Survey No. 7/2, 1st Floor, Divitigeramanahally, Deepanjalinagar, Bangalore Karnataka, India, 560026",
     },
     {
-      icon: <img 
-      src="/ic_baseline-phone.png" 
-      alt="Facebook" 
-      className="w-6 h-6"
-    />,
+      icon: (
+        <img src="/ic_baseline-phone.png" alt="Facebook" className="w-6 h-6" />
+      ),
       text: "+91 8310896240",
     },
     {
-      icon: <img 
-      src="/material-symbols_mail.png" 
-      alt="Facebook" 
-      className="w-6 h-6"
-    />,
+      icon: (
+        <img
+          src="/material-symbols_mail.png"
+          alt="Facebook"
+          className="w-6 h-6"
+        />
+      ),
       text: "hr@altio.me",
     },
   ];
 
   // Footer policies data
   // const policies = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
-       const policies = ['']
+  const policies = [""];
   return (
     <footer className="w-full bg-[#ffffffb2] shadow-[4px_0px_20px_#0000001f] py-12 mt-10">
       <div className="container  flex flex-col gap-10">
@@ -98,24 +99,36 @@ export const NavigationSection = (): JSX.Element => {
             </div>
 
             <div className="flex items-center gap-[22px]">
-              <a href="https://www.facebook.com/profile.php?id=61574727151719" target="_blank" rel="noopener noreferrer">
-                <img 
-                  src="/ri_facebook-fill.png" 
-                  alt="Facebook" 
+              <a
+                href="https://www.facebook.com/profile.php?id=61574727151719"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/ri_facebook-fill.png"
+                  alt="Facebook"
                   className="w-6 h-6"
                 />
               </a>
-              <a href="https://www.instagram.com/cheekoai/" target="_blank" rel="noopener noreferrer">
-              <img 
-                  src="/mdi_instagram.png" 
-                  alt="Facebook" 
+              <a
+                href="https://www.instagram.com/cheekoai/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/mdi_instagram.png"
+                  alt="Facebook"
                   className="w-6 h-6"
                 />
               </a>
-              <a href="https://www.youtube.com/@Cheekoai" target="_blank" rel="noopener noreferrer">
-              <img 
-                  src="/mdi_youtube.png" 
-                  alt="Facebook" 
+              <a
+                href="https://www.youtube.com/@Cheekoai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/mdi_youtube.png"
+                  alt="Facebook"
                   className="w-6 h-6"
                 />
               </a>
@@ -176,11 +189,17 @@ export const NavigationSection = (): JSX.Element => {
                   className="w-full p-2 border border-[#1e1e1e20] rounded-md text-xl"
                 />
                 {subscribeStatus && (
-                  <p className={`text-sm mt-1 ${subscribeStatus.includes('Failed') ? 'text-red-500' : 'text-green-500'}`}>
+                  <p
+                    className={`text-sm mt-1 ${
+                      subscribeStatus.includes("Failed")
+                        ? "text-red-500"
+                        : "text-green-500"
+                    }`}
+                  >
                     {subscribeStatus}
                   </p>
                 )}
-                <button 
+                <button
                   onClick={handleSubscribe}
                   className="mt-2 px-4 py-2 bg-[#FF6B01] text-white rounded-full hover:bg-[#333] transition-colors"
                 >
@@ -194,21 +213,18 @@ export const NavigationSection = (): JSX.Element => {
         <Separator className="w-full h-px bg-[#1e1e1e20]" />
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
+          <a
+            href="/privacy-policy"
+            className="font-normal text-[#1e1e1eb2] text-xl leading-8 hover:text-[#1e1e1e] transition-colors cursor-pointer"
+          >
+            Privacy Policy
+          </a>
+
+          <p style={{ fontSize: "18px" }}>|</p>
+
           <p className="font-normal text-[#1e1e1eb2] text-xl leading-8">
             © 2025 Cheekoai.in. All rights reserved.
           </p>
-
-          {/* <div className="flex flex-col md:flex-row items-center gap-4 md:gap-[43px]">
-            {policies.map((policy, index) => (
-              <a
-                key={index}
-                href="#"
-                className="font-normal text-[#1e1e1eb2] text-xl leading-8 hover:text-[#1e1e1e] transition-colors"
-              >
-                {policy}
-              </a>
-            ))}
-          </div> */}
         </div>
       </div>
     </footer>
